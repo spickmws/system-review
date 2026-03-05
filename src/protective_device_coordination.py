@@ -54,7 +54,7 @@ from pathlib import Path
 _HERE = Path(__file__).parent
 
 # Allow the caller to override the data directory via an environment variable.
-_DATA_DIR = Path(os.environ.get("COORD_DATA_DIR", str(_HERE)))
+_DATA_DIR = Path(os.environ.get("COORD_DATA_DIR", str(_HERE.parent / "data")))
 
 _CURVES_FILE    = _DATA_DIR / "curves_i_t.csv"
 _FUSES_FILE     = _DATA_DIR / "fuses_i_t.csv"
