@@ -26,9 +26,9 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-FILE_GLOB_PATTERN = "Feeder_Overview*.csv"
+FILE_GLOB_PATTERN = "CYME*.csv"
 DEVICE_TYPE_COL   = "Device Type"
-EQUIPMENT_ID_COL  = "Equipment Number"
+EQUIPMENT_ID_COL  = "Equipment ID"
 DEFAULT_OUTPUT     = "unique_equipment.csv"
 DEFAULT_ENCODING   = "utf-8-sig"   # handles BOM that Excel sometimes adds
 
