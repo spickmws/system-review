@@ -25,4 +25,5 @@
 
 # Reports and results
 src/reports/
+data/reports/
 src/results.csv
