@@ -1,0 +1,26 @@
+Prompt 1:
+
+I work for a power utility. I'm working a project to do a bulk calculation for coordination and protection checks. I have used fault flow software to output a per circuit report that contains short circuit data for each of the devices. I will need to perform sensitivity and coordination calculations for each of the protective devices and create a report for anything that does not meet our minimimum criteria. I'm looking to run the script in python. the files that contain the short circuit information are named "CYME_Device_Report_". The circuit number is appended to the end of the file. A sample file is attached. In addition, there will be another set of files call "Feeder_Overview_". The feeder overview files contain the circuit feeder protective set points. what other information do you need to ensure I engineer the best prompt for claude?
+
+
+
+
+I would like you to add the following sensitivity criteria:
+Breaker zone:
+200% sensitivity for smallest LLL faults. 
+200% sensitivity for smallest LG faults. 
+The feeder must clear bolted faults in less than 2 seconds.
+Electronic recloser zone:
+150% sensitivity for smallest LLL faults. 
+150% sensitivity for smallest LG faults. 
+The feeder must clear bolted faults in less than 2 seconds.
+
+I would like you to add the following coordination criteria:
+a script named protective_device_coordination.py was created to calculate the clearing time for faults. For any electronic recloser an additional 0.064 seconds should be added for opening time of the recloser. 
+The circuit feeder should have a minimum of 0.2 seconds between itself and the downstream reclosers, but 0.3s is perferred.
+reclosers should have a minimum of 0.22 seconds of margin between the slow curves with 0.3 seconds preferred. We are not concerned with fast curve coordination
+fuses should coordinate with the proper curve. Melting for the upstream device and clearing for the downstream device.
+Tripsavers (TS) should be treated like general reclosers for the purposes of this script.
+
+
+Any failures in should be flagged and added to a report that contains the device type, equipment number and circuit number. In the case of miscoordination, include the device with which we do not coordinate
