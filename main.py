@@ -39,7 +39,7 @@ _HERE = Path(__file__).parent
 DATA_DIR = _HERE / "data"
 REPORTS_DIR = Path(os.environ.get("COORD_REPORTS_DIR", str(DATA_DIR / "reports")))
 RECLOSER_DB_PATH = Path(
-    os.environ.get("COORD_RECLOSER_DB", str(DATA_DIR / "samples" / "RecloserDatabase_sample.xlsx"))
+    os.environ.get("COORD_RECLOSER_DB", str("//nascharf06/DPAC/21 Recloser Settings Database/Recloser Database/RecloserDatabase.xlsx"))
 )
 DEVICE_MAP_PATH = DATA_DIR / "protective_device_mapping.csv"
 OUTPUT_PATH = _HERE / "violations_report.csv"
