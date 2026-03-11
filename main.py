@@ -79,6 +79,9 @@ IGNORED_RECLOSER_GROUPS: set[int] = {5, 7, 8}
 # Column name in RecloserDatabase.xlsx that holds the group number
 RECLOSER_GROUP_COLUMN = "Group"
 
+# Physical interrupter opening time added to all electronic recloser trip times (seconds)
+ELECTRONIC_RECLOSER_OPENING_TIME_S: float = 0.064
+
 # Hydraulic recloser Equipment ID prefix → curve type in hydraulic_i_t.csv
 HYDRAULIC_MAP: dict[str, str] = {
     "L":   "L",
@@ -455,7 +458,7 @@ def _electronic_recloser_time(equipment_number: str, fault_a: float, element: st
             # Numeric SEL curve code — multiply result by time dial
             t = get_trip_time(device="curve", curve_type=str(int(curve)),
                               i=multiple) * td
-        return t, "", {"pickup": pickup, "curve": str(curve).strip(), "td": td}
+        return t + ELECTRONIC_RECLOSER_OPENING_TIME_S, "", {"pickup": pickup, "curve": str(curve).strip(), "td": td}
     except ValueError as exc:
         return None, str(exc), {}
 
