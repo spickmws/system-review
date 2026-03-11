@@ -73,6 +73,12 @@ THRESHOLDS: dict[tuple[str, str], float] = {
     ("fuse",                "fuse"):                 0.00,
 }
 
+# Groups of electronic reclosers excluded from coordination checks
+IGNORED_RECLOSER_GROUPS: set[int] = {5, 7, 8}
+
+# Column name in RecloserDatabase.xlsx that holds the group number
+RECLOSER_GROUP_COLUMN = "Group"
+
 # Hydraulic recloser Equipment ID prefix → curve type in hydraulic_i_t.csv
 HYDRAULIC_MAP: dict[str, str] = {
     "L":   "L",
@@ -217,6 +223,64 @@ def load_cyme_report(path: Path) -> dict[str, dict]:
 def extract_fid(equipment_number: str) -> str:
     """Extract FID from an equipment number (last token after the final '_')."""
     return equipment_number.rsplit("_", 1)[-1] if "_" in equipment_number else equipment_number
+
+
+def _recloser_group(equipment_number: str, recloser_db: dict) -> int | None:
+    """Return the group number for an electronic recloser, or None if not found."""
+    fid_str = extract_fid(equipment_number)
+    try:
+        fid = int(fid_str)
+    except ValueError:
+        return None
+    rec = recloser_db.get(fid)
+    if rec is None:
+        return None
+    try:
+        return int(rec[RECLOSER_GROUP_COLUMN])
+    except (KeyError, TypeError, ValueError):
+        return None
+
+
+def _is_ignored_recloser(equipment_number: str, equipment_id: str,
+                          cyme_type: str, device_map: dict,
+                          recloser_db: dict) -> bool:
+    """True if this device is an electronic recloser in an ignored group."""
+    if classify_device(equipment_id, cyme_type, device_map) != "electronic_recloser":
+        return False
+    grp = _recloser_group(equipment_number, recloser_db)
+    return grp in IGNORED_RECLOSER_GROUPS
+
+
+def _effective_upstream(equipment_number: str, devices: dict,
+                         device_map: dict, recloser_db: dict) -> dict | None:
+    """
+    Follow the upstream chain from equipment_number, skipping any electronic
+    reclosers whose group is in IGNORED_RECLOSER_GROUPS.
+    Returns the first non-ignored upstream device row, or None.
+    """
+    visited: set[str] = set()
+    current_num = equipment_number
+    while True:
+        row = devices.get(current_num)
+        if row is None:
+            return None
+        upstream_key = row.get("Upstream Protective Device", "").strip()
+        if not upstream_key:
+            return None
+        if upstream_key in visited:
+            return None  # cycle guard
+        visited.add(upstream_key)
+        u_row = devices.get(upstream_key)
+        if u_row is None:
+            return None
+        u_equip_num = u_row.get("Equipment Number", "").strip()
+        u_equip_id  = u_row.get("Equipment ID", "").strip()
+        u_cyme_type = u_row.get("Device Type", "").strip()
+        if _is_ignored_recloser(u_equip_num, u_equip_id, u_cyme_type,
+                                 device_map, recloser_db):
+            current_num = upstream_key  # skip and keep walking up
+        else:
+            return u_row               # found a non-ignored upstream
 
 
 def classify_device(equipment_id: str, device_type_from_cyme: str,
@@ -496,18 +560,24 @@ def check_circuit(circuit: str, cyme_path: Path,
     violations: list[dict] = []
 
     for equip_num, d_row in devices.items():
-        upstream_key = d_row.get("Upstream Protective Device", "").strip()
-        if not upstream_key:
+        if not d_row.get("Upstream Protective Device", "").strip():
             continue  # top-level breaker — no upstream in scope
 
-        u_row = devices.get(upstream_key)
+        d_equip_id  = d_row.get("Equipment ID", "").strip()
+        d_cyme_type = d_row.get("Device Type", "").strip()
+
+        # Skip electronic reclosers in ignored groups — not coordination targets
+        if _is_ignored_recloser(equip_num, d_equip_id, d_cyme_type,
+                                 device_map, recloser_db):
+            continue
+
+        u_row = _effective_upstream(equip_num, devices, device_map, recloser_db)
         if u_row is None:
             continue  # upstream on a different circuit or not found
 
-        u_equip_id = u_row.get("Equipment ID", "").strip()
-        d_equip_id = d_row.get("Equipment ID", "").strip()
+        upstream_key = u_row.get("Equipment Number", "").strip()
+        u_equip_id  = u_row.get("Equipment ID", "").strip()
         u_cyme_type = u_row.get("Device Type", "").strip()
-        d_cyme_type = d_row.get("Device Type", "").strip()
 
         u_class = classify_device(u_equip_id, u_cyme_type, device_map)
         d_class = classify_device(d_equip_id, d_cyme_type, device_map)
