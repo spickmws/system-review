@@ -123,6 +123,18 @@ OUTPUT_FIELDNAMES = [
     "Ground_Margin_s",
     "Ground_Required_Margin_s",
     "Ground_Violation",
+    "Upstream_Phase_Pickup_A",
+    "Upstream_Phase_Curve",
+    "Upstream_Phase_TD",
+    "Upstream_Ground_Pickup_A",
+    "Upstream_Ground_Curve",
+    "Upstream_Ground_TD",
+    "Downstream_Phase_Pickup_A",
+    "Downstream_Phase_Curve",
+    "Downstream_Phase_TD",
+    "Downstream_Ground_Pickup_A",
+    "Downstream_Ground_Curve",
+    "Downstream_Ground_TD",
     "Upstream_Total_Customers",
     "Downstream_Total_Customers",
     "Customers_Erroneously_Disconnected",
@@ -367,15 +379,15 @@ def _safe_float(value, default: float = 0.0) -> float:
 
 
 def _breaker_time(circuit: str, fault_a: float, element: str,
-                  relay_settings: dict) -> tuple[float | None, str]:
+                  relay_settings: dict) -> tuple[float | None, str, dict]:
     """
     Compute breaker trip time from Feeder_Relay_Settings.
     element: 'phase' or 'ground'
-    Returns (seconds, note).
+    Returns (seconds, note, settings).
     """
     s = relay_settings.get(circuit)
     if s is None:
-        return None, f"No relay settings for circuit {circuit}"
+        return None, f"No relay settings for circuit {circuit}", {}
 
     try:
         ctr = float(s["CTR"])
@@ -388,34 +400,34 @@ def _breaker_time(circuit: str, fault_a: float, element: str,
             curve  = s["51G1C"].strip()
             td     = float(s["51G1TD"])
     except (KeyError, ValueError) as exc:
-        return None, f"Relay setting error ({exc})"
+        return None, f"Relay setting error ({exc})", {}
 
     if pickup <= 0:
-        return None, "Breaker pickup is zero"
+        return None, "Breaker pickup is zero", {}
 
     multiple = fault_a / pickup
     try:
         t = get_trip_time(device="ucurve", curve_type=curve, i=multiple, time_dial=td)
-        return t, ""
+        return t, "", {"pickup": pickup, "curve": curve, "td": td}
     except ValueError as exc:
-        return None, str(exc)
+        return None, str(exc), {}
 
 
 def _electronic_recloser_time(equipment_number: str, fault_a: float, element: str,
-                               recloser_db: dict) -> tuple[float | None, str]:
+                               recloser_db: dict) -> tuple[float | None, str, dict]:
     """
     Compute electronic recloser slow-curve trip time from RecloserDatabase.
-    Returns (seconds, note).
+    Returns (seconds, note, settings).
     """
     fid_str = extract_fid(equipment_number)
     try:
         fid = int(fid_str)
     except ValueError:
-        return None, f"Cannot parse FID from '{equipment_number}'"
+        return None, f"Cannot parse FID from '{equipment_number}'", {}
 
     rec = recloser_db.get(fid)
     if rec is None:
-        return None, f"FID {fid} not in RecloserDatabase"
+        return None, f"FID {fid} not in RecloserDatabase", {}
 
     try:
         ctr = float(rec["CTR"])
@@ -428,10 +440,10 @@ def _electronic_recloser_time(equipment_number: str, fault_a: float, element: st
             curve  = rec["gSC"]
             td     = float(rec["gSTD"])
     except (KeyError, TypeError, ValueError) as exc:
-        return None, f"RecloserDB field error ({exc})"
+        return None, f"RecloserDB field error ({exc})", {}
 
     if pickup <= 0:
-        return None, "Recloser pickup is zero"
+        return None, "Recloser pickup is zero", {}
 
     multiple = fault_a / pickup
     try:
@@ -443,84 +455,85 @@ def _electronic_recloser_time(equipment_number: str, fault_a: float, element: st
             # Numeric SEL curve code — multiply result by time dial
             t = get_trip_time(device="curve", curve_type=str(int(curve)),
                               i=multiple) * td
-        return t, ""
+        return t, "", {"pickup": pickup, "curve": str(curve).strip(), "td": td}
     except ValueError as exc:
-        return None, str(exc)
+        return None, str(exc), {}
 
 
 def _hydraulic_recloser_time(equipment_id: str, fault_a: float,
-                              device_map: dict) -> tuple[float | None, str]:
+                              device_map: dict) -> tuple[float | None, str, dict]:
     """
     Compute hydraulic recloser slow-curve trip time.
-    Returns (seconds, note).
+    Returns (seconds, note, settings).
     """
     entry = device_map.get(equipment_id)
     if entry is None:
-        return None, f"'{equipment_id}' not in device map"
+        return None, f"'{equipment_id}' not in device map", {}
 
     try:
         pickup = float(entry["Pickup"])
     except ValueError:
-        return None, f"Non-numeric pickup for '{equipment_id}'"
+        return None, f"Non-numeric pickup for '{equipment_id}'", {}
 
     prefix = equipment_id.split("_")[0]
     curve_type = HYDRAULIC_MAP.get(prefix)
     if curve_type is None:
-        return None, f"No hydraulic curve mapping for prefix '{prefix}'"
+        return None, f"No hydraulic curve mapping for prefix '{prefix}'", {}
 
     if pickup <= 0:
-        return None, "Hydraulic pickup is zero"
+        return None, "Hydraulic pickup is zero", {}
 
     multiple = fault_a / pickup
     try:
         t = get_trip_time(device="hydraulic", curve_type=curve_type,
                           i=multiple, curve="slow")
-        return t, ""
+        return t, "", {"pickup": pickup, "curve": curve_type, "td": None}
     except ValueError as exc:
-        return None, str(exc)
+        return None, str(exc), {}
 
 
-def _tripsaver_time(fault_a: float) -> tuple[float | None, str]:
+def _tripsaver_time(fault_a: float) -> tuple[float | None, str, dict]:
     """
     Compute TripSaver trip time. All TripSaver II devices use TS100T.
     i is in primary amps.
-    Returns (seconds, note).
+    Returns (seconds, note, settings).
     """
     try:
         t = get_trip_time(device="ts", curve_type="TS100T", i=fault_a)
-        return t, ""
+        return t, "", {"pickup": None, "curve": "TS100T", "td": None}
     except ValueError as exc:
-        return None, str(exc)
+        return None, str(exc), {}
 
 
 def _fuse_time(equipment_id: str, fault_a: float, base_kv: float,
-               fuse_curve: str) -> tuple[float | None, str]:
+               fuse_curve: str) -> tuple[float | None, str, dict]:
     """
     Compute fuse trip time.
     fuse_curve: 'Melting' (upstream role) or 'Clearing' (downstream role).
-    Returns (seconds, note).
+    Returns (seconds, note, settings).
     """
     curve_type = get_fuse_curve_type(equipment_id, base_kv)
     if curve_type is None:
-        return None, f"Cannot determine fuse curve type for '{equipment_id}'"
+        return None, f"Cannot determine fuse curve type for '{equipment_id}'", {}
     try:
         t = get_trip_time(device="fuse", curve_type=curve_type,
                           i=fault_a, curve=fuse_curve)
-        return t, ""
+        return t, "", {"pickup": None, "curve": curve_type, "td": None}
     except ValueError as exc:
-        return None, str(exc)
+        return None, str(exc), {}
 
 
 def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
                       device_class: str, circuit: str,
                       relay_settings: dict, recloser_db: dict,
-                      device_map: dict) -> tuple[float | None, str]:
+                      device_map: dict) -> tuple[float | None, str, dict]:
     """
-    Master dispatcher — returns (trip_time_seconds | None, note_string).
+    Master dispatcher — returns (trip_time_seconds | None, note_string, settings).
 
     role:    'upstream'   → fuse uses Melting curve
              'downstream' → fuse uses Clearing curve
     element: 'phase' | 'ground'
+    settings keys: 'pickup' (primary A), 'curve' (str), 'td' (float | None)
     """
     equip_num = device_row.get("Equipment Number", "").strip()
     equip_id  = device_row.get("Equipment ID", "").strip()
@@ -542,7 +555,7 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
         fuse_curve = "Melting" if role == "upstream" else "Clearing"
         return _fuse_time(equip_id, fault_a, base_kv, fuse_curve)
 
-    return None, f"Unknown device class '{device_class}'"
+    return None, f"Unknown device class '{device_class}'", {}
 
 
 # ---------------------------------------------------------------------------
@@ -592,16 +605,18 @@ def check_circuit(circuit: str, cyme_path: Path,
         # ---- Phase check -----------------------------------------------
         fault_ph = _safe_float(d_row.get("LLL / LLLG Max"))
         t_up_ph = t_dn_ph = margin_ph = None
+        s_up_ph: dict = {}
+        s_dn_ph: dict = {}
         ph_violation = False
 
         if fault_ph > 0.0:
-            t_up_ph, note = compute_trip_time(
+            t_up_ph, note, s_up_ph = compute_trip_time(
                 u_row, fault_ph, "phase", "upstream",
                 u_class, circuit, relay_settings, recloser_db, device_map)
             if note:
                 notes.append(f"Phase upstream: {note}")
 
-            t_dn_ph, note = compute_trip_time(
+            t_dn_ph, note, s_dn_ph = compute_trip_time(
                 d_row, fault_ph, "phase", "downstream",
                 d_class, circuit, relay_settings, recloser_db, device_map)
             if note:
@@ -614,16 +629,18 @@ def check_circuit(circuit: str, cyme_path: Path,
         # ---- Ground check ----------------------------------------------
         fault_gnd = _safe_float(d_row.get("LG Max"))
         t_up_gnd = t_dn_gnd = margin_gnd = None
+        s_up_gnd: dict = {}
+        s_dn_gnd: dict = {}
         gnd_violation = False
 
         if fault_gnd > 0.0:
-            t_up_gnd, note = compute_trip_time(
+            t_up_gnd, note, s_up_gnd = compute_trip_time(
                 u_row, fault_gnd, "ground", "upstream",
                 u_class, circuit, relay_settings, recloser_db, device_map)
             if note:
                 notes.append(f"Ground upstream: {note}")
 
-            t_dn_gnd, note = compute_trip_time(
+            t_dn_gnd, note, s_dn_gnd = compute_trip_time(
                 d_row, fault_gnd, "ground", "downstream",
                 d_class, circuit, relay_settings, recloser_db, device_map)
             if note:
@@ -641,6 +658,11 @@ def check_circuit(circuit: str, cyme_path: Path,
         d_customers = int(_safe_float(d_row.get("Total downstream Customers")))
 
         check_type = f"{_CLASS_LABEL[u_class]}-{_CLASS_LABEL[d_class]}"
+
+        def _fmt_setting(val) -> str:
+            if val is None:
+                return ""
+            return f"{val:.4f}" if isinstance(val, float) else str(val)
 
         violations.append({
             "Circuit":                          circuit,
@@ -663,6 +685,18 @@ def check_circuit(circuit: str, cyme_path: Path,
             "Ground_Margin_s":                  f"{margin_gnd:.4f}" if margin_gnd is not None else "",
             "Ground_Required_Margin_s":         threshold,
             "Ground_Violation":                 gnd_violation,
+            "Upstream_Phase_Pickup_A":          _fmt_setting(s_up_ph.get("pickup")),
+            "Upstream_Phase_Curve":             s_up_ph.get("curve", ""),
+            "Upstream_Phase_TD":                _fmt_setting(s_up_ph.get("td")),
+            "Upstream_Ground_Pickup_A":         _fmt_setting(s_up_gnd.get("pickup")),
+            "Upstream_Ground_Curve":            s_up_gnd.get("curve", ""),
+            "Upstream_Ground_TD":               _fmt_setting(s_up_gnd.get("td")),
+            "Downstream_Phase_Pickup_A":        _fmt_setting(s_dn_ph.get("pickup")),
+            "Downstream_Phase_Curve":           s_dn_ph.get("curve", ""),
+            "Downstream_Phase_TD":              _fmt_setting(s_dn_ph.get("td")),
+            "Downstream_Ground_Pickup_A":       _fmt_setting(s_dn_gnd.get("pickup")),
+            "Downstream_Ground_Curve":          s_dn_gnd.get("curve", ""),
+            "Downstream_Ground_TD":             _fmt_setting(s_dn_gnd.get("td")),
             "Upstream_Total_Customers":         u_customers,
             "Downstream_Total_Customers":       d_customers,
             "Customers_Erroneously_Disconnected": u_customers - d_customers,
