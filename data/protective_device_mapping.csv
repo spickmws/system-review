@@ -1,10 +1,10 @@
 Equipment ID,Device Type,Pickup
-4H_100A,Recloser,400
-4H_50A,Recloser,200
-4H_70A,Recloser,280
-CMR_100A,Recloser,400
-CMR_140A,Recloser,560
-CMR_70A,Recloser,280
+4H_100A,Recloser,200
+4H_50A,Recloser,100
+4H_70A,Recloser,140
+CMR_100A,Recloser,200
+CMR_140A,Recloser,280
+CMR_70A,Recloser,140
 DEFAULT_BREAKER,Breaker,
 D_15A,Fuse,
 D_20A,Fuse,
@@ -34,10 +34,10 @@ K_50A,Fuse,
 K_65A,Fuse,
 K_80A,Fuse,
 K_UNKA,Fuse,
-L_100A,Recloser,400
-L_140A,Recloser,560
-L_200A,Recloser,800
-L_70A,Recloser,280
+L_100A,Recloser,200
+L_140A,Recloser,280
+L_200A,Recloser,400
+L_70A,Recloser,140
 NVSS_800A,Recloser,Electronic
 NVST_800A,Recloser,Electronic
 NVTT_800A,Recloser,Electronic
@@ -88,10 +88,10 @@ UNK_15A,Fuse,Electronic
 UNK_50A,Fuse,Electronic
 UNK_60A,Fuse,Electronic
 UNK_UNKA,Fuse,Electronic
-V4H_140A,Recloser,560
-V4L_100A,Recloser,400
-V4L_140A,Recloser,560
-V4L_200A,Recloser,800
+V4H_140A,Recloser,280
+V4L_100A,Recloser,200
+V4L_140A,Recloser,280
+V4L_200A,Recloser,400
 VPSS_800A,Recloser,Electronic
 VPST_800A,Recloser,Electronic
 VPTT_800A,Recloser,Electronic
