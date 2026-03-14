@@ -27,3 +27,4 @@
 src/reports/
 data/reports/
 src/results.csv
+violations_report.csv
