@@ -43,6 +43,14 @@ RECLOSER_DB_PATH = Path(
 )
 DEVICE_MAP_PATH = DATA_DIR / "protective_device_mapping.csv"
 OUTPUT_PATH = _HERE / "violations_report.csv"
+DISCREPANCY_PATH = _HERE / "voltage_discrepancies.csv"
+
+_VOLTAGE_CLASS_MAP: dict[str, set[float]] = {
+    "12": {12.47, 12.5},
+    "04": {2.4, 4.16},
+    "24": {23.9, 24.94},
+    "34": {34.5},
+}
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -229,6 +237,25 @@ def load_cyme_report(path: Path) -> dict[str, dict]:
             if equip_num:
                 devices[equip_num] = row
     return devices
+
+
+def _check_voltage_class(circuit: str, devices: dict) -> list[dict]:
+    """
+    Return discrepancy rows if any device base voltage doesn't match the
+    circuit's voltage class (positions [4:6] of the 8-char circuit ID).
+    """
+    voltage_class = circuit[4:6] if len(circuit) == 8 else None
+    expected = _VOLTAGE_CLASS_MAP.get(voltage_class) if voltage_class else None
+    if expected is None:
+        return []
+
+    mismatched: set[float] = set()
+    for row in devices.values():
+        bv = _safe_float(row.get("Base Voltage (kVLL)"), None)
+        if bv is None or bv not in expected:
+            mismatched.add(bv if bv is not None else 0.0)
+
+    return [{"Circuit": circuit, "Base_Voltage_kVLL": v} for v in sorted(mismatched)]
 
 
 # ---------------------------------------------------------------------------
@@ -568,12 +595,18 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
 
 def check_circuit(circuit: str, cyme_path: Path,
                   device_map: dict, recloser_db: dict,
-                  relay_settings: dict) -> list[dict]:
+                  relay_settings: dict) -> tuple[list[dict], list[dict]]:
     """
     Run all coordination checks for one circuit.
-    Returns a list of violation dicts (one per device pair that violates).
+    Returns (violations, discrepancies). If a voltage class mismatch is found,
+    the circuit is skipped and discrepancies are returned instead of violations.
     """
     devices = load_cyme_report(cyme_path)
+
+    discrepancies = _check_voltage_class(circuit, devices)
+    if discrepancies:
+        return [], discrepancies
+
     violations: list[dict] = []
 
     for equip_num, d_row in devices.items():
@@ -707,7 +740,7 @@ def check_circuit(circuit: str, cyme_path: Path,
             "Notes":                            "; ".join(notes),
         })
 
-    return violations
+    return violations, []
 
 
 # ---------------------------------------------------------------------------
@@ -720,6 +753,14 @@ def write_violations(violations: list[dict], output_path: Path) -> None:
         writer.writeheader()
         writer.writerows(violations)
     print(f"Wrote {len(violations)} violation(s) to {output_path}")
+
+
+def write_discrepancies(discrepancies: list[dict], output_path: Path) -> None:
+    with open(output_path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["Circuit", "Base_Voltage_kVLL"])
+        writer.writeheader()
+        writer.writerows(discrepancies)
+    print(f"Wrote {len(discrepancies)} voltage discrepancy(s) to {output_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -740,15 +781,20 @@ def main() -> None:
     print(f"  CYME reports:    {len(cyme_files):>5} circuits\n")
 
     all_violations: list[dict] = []
+    all_discrepancies: list[dict] = []
     for cyme_path in cyme_files:
         circuit = cyme_path.stem.rsplit("_", 1)[-1]
-        v = check_circuit(circuit, cyme_path, device_map, recloser_db, relay_settings)
-        if v:
-            print(f"  Circuit {circuit}: {len(v)} violation(s)")
-        all_violations.extend(v)
+        violations, discrepancies = check_circuit(circuit, cyme_path, device_map, recloser_db, relay_settings)
+        if discrepancies:
+            print(f"  Circuit {circuit}: voltage mismatch — skipped")
+        elif violations:
+            print(f"  Circuit {circuit}: {len(violations)} violation(s)")
+        all_violations.extend(violations)
+        all_discrepancies.extend(discrepancies)
 
     print()
     write_violations(all_violations, OUTPUT_PATH)
+    write_discrepancies(all_discrepancies, DISCREPANCY_PATH)
     print(f"\nDone. {len(all_violations)} total violation(s) across {len(cyme_files)} circuit(s).")
 
 
