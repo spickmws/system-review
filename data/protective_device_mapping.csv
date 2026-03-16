@@ -71,7 +71,7 @@ STANDARD_25A,Fuse,Electronic
 STANDARD_30A,Fuse,Electronic
 STANDARD_40A,Fuse,Electronic
 TRIPSAVER_II_100A,Recloser,TS80T
-TRIPSAVER_II_200A,Recloser,TS150T
+TRIPSAVER_II_200A,Recloser,TS100T
 T_100A,Fuse,Electronic
 T_10A,Fuse,Electronic
 T_12A,Fuse,Electronic
