@@ -319,7 +319,7 @@ def classify_device(equipment_id: str, device_type_from_cyme: str,
     if dev_type == "Breaker":
         return "breaker"
     elif dev_type == "Recloser":
-        if pickup == "TS":
+        if pickup.upper().startswith("TS"):
             return "tripsaver"
         elif pickup == "Electronic":
             return "electronic_recloser"
@@ -495,15 +495,15 @@ def _hydraulic_recloser_time(equipment_id: str, fault_a: float,
         return None, str(exc), {}
 
 
-def _tripsaver_time(fault_a: float) -> tuple[float | None, str, dict]:
+def _tripsaver_time(fault_a: float, curve_type: str) -> tuple[float | None, str, dict]:
     """
-    Compute TripSaver trip time. All TripSaver II devices use TS100T.
+    Compute TripSaver trip time using the curve specified in the device mapping.
     i is in primary amps.
     Returns (seconds, note, settings).
     """
     try:
-        t = get_trip_time(device="ts", curve_type="TS100T", i=fault_a)
-        return t, "", {"pickup": None, "curve": "TS100T", "td": None}
+        t = get_trip_time(device="ts", curve_type=curve_type, i=fault_a)
+        return t, "", {"pickup": None, "curve": curve_type, "td": None}
     except ValueError as exc:
         return None, str(exc), {}
 
@@ -552,7 +552,8 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
         return _hydraulic_recloser_time(equip_id, fault_a, device_map)
 
     if device_class == "tripsaver":
-        return _tripsaver_time(fault_a)
+        curve_type = device_map.get(equip_id, {}).get("Pickup", "TS100T")
+        return _tripsaver_time(fault_a, curve_type)
 
     if device_class == "fuse":
         fuse_curve = "Melting" if role == "upstream" else "Clearing"
