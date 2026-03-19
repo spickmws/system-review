@@ -41,9 +41,12 @@ REPORTS_DIR = Path(os.environ.get("COORD_REPORTS_DIR", str(DATA_DIR / "reports")
 RECLOSER_DB_PATH = Path(
     os.environ.get("COORD_RECLOSER_DB", str("//nascharf06/DPAC/21 Recloser Settings Database/Recloser Database/RecloserDatabase.xlsx"))
 )
-DEVICE_MAP_PATH = DATA_DIR / "protective_device_mapping.csv"
+DEVICE_MAP_PATH    = DATA_DIR / "protective_device_mapping.csv"
+TRIPSAVER_DB_PATH  = DATA_DIR / "references" / "tripsavers.csv"
 OUTPUT_PATH = _HERE / "violations_report.csv"
 DISCREPANCY_PATH = _HERE / "voltage_discrepancies.csv"
+
+_TS_PART_MAP: dict[str, str] = {"80T": "TS80T", "100T": "TS100T", "150E": "TS150E"}
 
 _VOLTAGE_CLASS_MAP: dict[str, set[float]] = {
     "12": {12.47, 12.5},
@@ -169,6 +172,25 @@ def load_device_map() -> dict[str, dict]:
                 "Device Type": row["Device Type"].strip(),
                 "Pickup":      row["Pickup"].strip(),
             }
+    return result
+
+
+def load_tripsaver_db() -> dict[str, str]:
+    """
+    Load data/references/tripsavers.csv.
+    Returns {rec_id_str: curve_type} e.g. {'581519278': 'TS80T'}.
+    Curve type is parsed from the unit_cu part number string.
+    """
+    result: dict[str, str] = {}
+    with open(TRIPSAVER_DB_PATH, encoding="utf-8-sig") as fh:
+        for row in csv.DictReader(fh):
+            rec_id  = row["rec_id"].strip()
+            unit_cu = row["unit_cu"].strip()
+            for token in unit_cu.split("-"):
+                curve = _TS_PART_MAP.get(token.upper())
+                if curve:
+                    result[rec_id] = curve
+                    break
     return result
 
 
@@ -556,7 +578,7 @@ def _fuse_time(equipment_id: str, fault_a: float, base_kv: float,
 def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
                       device_class: str, circuit: str,
                       relay_settings: dict, recloser_db: dict,
-                      device_map: dict) -> tuple[float | None, str, dict]:
+                      device_map: dict, tripsaver_db: dict) -> tuple[float | None, str, dict]:
     """
     Master dispatcher — returns (trip_time_seconds | None, note_string, settings).
 
@@ -579,8 +601,18 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
         return _hydraulic_recloser_time(equip_id, fault_a, device_map)
 
     if device_class == "tripsaver":
-        curve_type = device_map.get(equip_id, {}).get("Pickup", "TS100T")
-        return _tripsaver_time(fault_a, curve_type)
+        fid = extract_fid(equip_num)
+        curve_type = tripsaver_db.get(fid)
+        ts_note = ""
+        if curve_type is None:
+            curve_type = device_map.get(equip_id, {}).get("Pickup")
+        if curve_type is None:
+            curve_type = "TS100T"
+            ts_note = f"FID {fid} not in tripsaver DB or device map; defaulted to TS100T"
+        t, err, settings = _tripsaver_time(fault_a, curve_type)
+        if ts_note and not err:
+            err = ts_note
+        return t, err, settings
 
     if device_class == "fuse":
         fuse_curve = "Melting" if role == "upstream" else "Clearing"
@@ -595,7 +627,7 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
 
 def check_circuit(circuit: str, cyme_path: Path,
                   device_map: dict, recloser_db: dict,
-                  relay_settings: dict) -> tuple[list[dict], list[dict]]:
+                  relay_settings: dict, tripsaver_db: dict) -> tuple[list[dict], list[dict]]:
     """
     Run all coordination checks for one circuit.
     Returns (violations, discrepancies). If a voltage class mismatch is found,
@@ -649,13 +681,13 @@ def check_circuit(circuit: str, cyme_path: Path,
         if fault_ph > 0.0:
             t_up_ph, note, s_up_ph = compute_trip_time(
                 u_row, fault_ph, "phase", "upstream",
-                u_class, circuit, relay_settings, recloser_db, device_map)
+                u_class, circuit, relay_settings, recloser_db, device_map, tripsaver_db)
             if note:
                 notes.append(f"Phase upstream: {note}")
 
             t_dn_ph, note, s_dn_ph = compute_trip_time(
                 d_row, fault_ph, "phase", "downstream",
-                d_class, circuit, relay_settings, recloser_db, device_map)
+                d_class, circuit, relay_settings, recloser_db, device_map, tripsaver_db)
             if note:
                 notes.append(f"Phase downstream: {note}")
 
@@ -673,13 +705,13 @@ def check_circuit(circuit: str, cyme_path: Path,
         if fault_gnd > 0.0:
             t_up_gnd, note, s_up_gnd = compute_trip_time(
                 u_row, fault_gnd, "ground", "upstream",
-                u_class, circuit, relay_settings, recloser_db, device_map)
+                u_class, circuit, relay_settings, recloser_db, device_map, tripsaver_db)
             if note:
                 notes.append(f"Ground upstream: {note}")
 
             t_dn_gnd, note, s_dn_gnd = compute_trip_time(
                 d_row, fault_gnd, "ground", "downstream",
-                d_class, circuit, relay_settings, recloser_db, device_map)
+                d_class, circuit, relay_settings, recloser_db, device_map, tripsaver_db)
             if note:
                 notes.append(f"Ground downstream: {note}")
 
@@ -770,10 +802,12 @@ def write_discrepancies(discrepancies: list[dict], output_path: Path) -> None:
 def main() -> None:
     print("Loading reference data...")
     device_map     = load_device_map()
+    tripsaver_db   = load_tripsaver_db()
     recloser_db    = load_recloser_db()
     relay_settings = load_relay_settings()
 
     print(f"  Device map:      {len(device_map):>5} entries")
+    print(f"  Tripsaver DB:    {len(tripsaver_db):>5} entries")
     print(f"  Recloser DB:     {len(recloser_db):>5} entries")
     print(f"  Relay settings:  {len(relay_settings):>5} circuits")
 
@@ -784,7 +818,7 @@ def main() -> None:
     all_discrepancies: list[dict] = []
     for cyme_path in cyme_files:
         circuit = cyme_path.stem.rsplit("_", 1)[-1]
-        violations, discrepancies = check_circuit(circuit, cyme_path, device_map, recloser_db, relay_settings)
+        violations, discrepancies = check_circuit(circuit, cyme_path, device_map, recloser_db, relay_settings, tripsaver_db)
         if discrepancies:
             print(f"  Circuit {circuit}: voltage mismatch — skipped")
         elif violations:
