@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/spick/Documents/Git/system-review/src/*.py /c/Users/spick/Documents/Git/system-review/*.py 2>/dev/null | tail -20)",
+      "Bash(grep -h \"^51\" C:/Users/spick/Documents/Git/system-review/data/reports/Feeder_Relay_Settings_*.csv | sort -u)",
+      "Bash(grep -h \"^Recloser\" C:/Users/spick/Documents/Git/system-review/data/reports/CYME_Device_Report_*.csv | head -10)",
+      "Bash(grep -h \"^51G1C\\\\|^51P1C\" C:/Users/spick/Documents/Git/system-review/data/reports/Feeder_Relay_Settings_*.csv | sort -u)",
+      "Bash(cd \"C:\\\\Users\\\\spick\\\\Documents\\\\Git\\\\system-review\" && python main.py 2>&1)"
+    ]
+  }
+}

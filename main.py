@@ -21,6 +21,7 @@ Configure DATA_DIR / RECLOSER_DB_PATH below, or override via environment:
 
 import csv
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -39,12 +40,13 @@ _HERE = Path(__file__).parent
 DATA_DIR = _HERE / "data"
 REPORTS_DIR = Path(os.environ.get("COORD_REPORTS_DIR", str(DATA_DIR / "reports")))
 RECLOSER_DB_PATH = Path(
-    os.environ.get("COORD_RECLOSER_DB", str("//nascharf06/DPAC/21 Recloser Settings Database/Recloser Database/RecloserDatabase.xlsx"))
+    os.environ.get("COORD_RECLOSER_DB", str(DATA_DIR / "references/RecloserDatabase.xlsx"))
 )
 DEVICE_MAP_PATH    = DATA_DIR / "protective_device_mapping.csv"
 TRIPSAVER_DB_PATH  = DATA_DIR / "references" / "tripsavers.csv"
 OUTPUT_PATH = _HERE / "violations_report.csv"
 DISCREPANCY_PATH = _HERE / "voltage_discrepancies.csv"
+INDETERMINATE_PATH = _HERE / "indeterminate_pairs.csv"
 
 _TS_PART_MAP: dict[str, str] = {"80T": "TS80T", "100T": "TS100T", "150E": "TS150E"}
 
@@ -430,6 +432,26 @@ def _safe_float(value, default: float = 0.0) -> float:
         return default
 
 
+_U_CURVE_PATTERN = re.compile(r'^U[1-5]$', re.IGNORECASE)
+
+_RELAY_KEY_ALIASES: dict[str, list[str]] = {
+    "51P1P":  ["51P1P", "51PP"],
+    "51P1C":  ["51P1C", "51PC"],
+    "51P1TD": ["51P1TD", "51PTD"],
+    "51G1P":  ["51G1P", "51NP"],
+    "51G1C":  ["51G1C", "51NC"],
+    "51G1TD": ["51G1TD", "51NTD"],
+}
+
+
+def _relay_get(s: dict, key: str) -> str:
+    """Return the first matching alias value from a relay settings dict."""
+    for alias in _RELAY_KEY_ALIASES[key]:
+        if alias in s:
+            return s[alias]
+    raise KeyError(key)
+
+
 def _breaker_time(circuit: str, fault_a: float, element: str,
                   relay_settings: dict) -> tuple[float | None, str, dict]:
     """
@@ -444,13 +466,13 @@ def _breaker_time(circuit: str, fault_a: float, element: str,
     try:
         ctr = float(s["CTR"])
         if element == "phase":
-            pickup = float(s["51P1P"]) * ctr
-            curve  = s["51P1C"].strip()
-            td     = float(s["51P1TD"])
+            pickup = float(_relay_get(s, "51P1P")) * ctr
+            curve  = _relay_get(s, "51P1C").strip()
+            td     = float(_relay_get(s, "51P1TD"))
         else:
-            pickup = float(s["51G1P"]) * ctr
-            curve  = s["51G1C"].strip()
-            td     = float(s["51G1TD"])
+            pickup = float(_relay_get(s, "51G1P")) * ctr
+            curve  = _relay_get(s, "51G1C").strip()
+            td     = float(_relay_get(s, "51G1TD"))
     except (KeyError, ValueError) as exc:
         return None, f"Relay setting error ({exc})", {}
 
@@ -459,7 +481,10 @@ def _breaker_time(circuit: str, fault_a: float, element: str,
 
     multiple = fault_a / pickup
     try:
-        t = get_trip_time(device="ucurve", curve_type=curve, i=multiple, time_dial=td)
+        if _U_CURVE_PATTERN.match(curve):
+            t = get_trip_time(device="ucurve", curve_type=curve, i=multiple, time_dial=td)
+        else:
+            t = get_trip_time(device="curve", curve_type=curve, i=multiple) * td
         return t, "", {"pickup": pickup, "curve": curve, "td": td}
     except ValueError as exc:
         return None, str(exc), {}
@@ -627,19 +652,20 @@ def compute_trip_time(device_row: dict, fault_a: float, element: str, role: str,
 
 def check_circuit(circuit: str, cyme_path: Path,
                   device_map: dict, recloser_db: dict,
-                  relay_settings: dict, tripsaver_db: dict) -> tuple[list[dict], list[dict]]:
+                  relay_settings: dict, tripsaver_db: dict) -> tuple[list[dict], list[dict], list[dict]]:
     """
     Run all coordination checks for one circuit.
-    Returns (violations, discrepancies). If a voltage class mismatch is found,
-    the circuit is skipped and discrepancies are returned instead of violations.
+    Returns (violations, discrepancies, indeterminate). If a voltage class
+    mismatch is found, the circuit is skipped and discrepancies are returned.
     """
     devices = load_cyme_report(cyme_path)
 
     discrepancies = _check_voltage_class(circuit, devices)
     if discrepancies:
-        return [], discrepancies
+        return [], discrepancies, []
 
     violations: list[dict] = []
+    indeterminate: list[dict] = []
 
     for equip_num, d_row in devices.items():
         if not d_row.get("Upstream Protective Device", "").strip():
@@ -719,8 +745,27 @@ def check_circuit(circuit: str, cyme_path: Path,
                 margin_gnd    = t_up_gnd - t_dn_gnd
                 gnd_violation = margin_gnd < threshold
 
+        # Collect indeterminate pairs — fault current present but trip time unresolvable
+        is_indeterminate = (
+            (fault_ph  > 0 and (t_up_ph  is None or t_dn_ph  is None)) or
+            (fault_gnd > 0 and (t_up_gnd is None or t_dn_gnd is None))
+        )
+
         # Emit a row only when at least one element has a confirmed violation
         if not (ph_violation or gnd_violation):
+            if is_indeterminate:
+                phase_notes  = "; ".join(n for n in notes if n.startswith("Phase"))
+                ground_notes = "; ".join(n for n in notes if n.startswith("Ground"))
+                indeterminate.append({
+                    "Circuit":                     circuit,
+                    "Upstream_Equipment_Number":   upstream_key,
+                    "Upstream_Equipment_ID":       u_equip_id,
+                    "Downstream_Equipment_Number": equip_num,
+                    "Downstream_Equipment_ID":     d_equip_id,
+                    "Check_Type":                  f"{_CLASS_LABEL[u_class]}-{_CLASS_LABEL[d_class]}",
+                    "Phase_Note":                  phase_notes,
+                    "Ground_Note":                 ground_notes,
+                })
             continue
 
         u_customers = int(_safe_float(u_row.get("Total downstream Customers")))
@@ -772,7 +817,7 @@ def check_circuit(circuit: str, cyme_path: Path,
             "Notes":                            "; ".join(notes),
         })
 
-    return violations, []
+    return violations, [], indeterminate
 
 
 # ---------------------------------------------------------------------------
@@ -793,6 +838,24 @@ def write_discrepancies(discrepancies: list[dict], output_path: Path) -> None:
         writer.writeheader()
         writer.writerows(discrepancies)
     print(f"Wrote {len(discrepancies)} voltage discrepancy(s) to {output_path}")
+
+
+def write_indeterminate(indeterminate: list[dict], output_path: Path) -> None:
+    fieldnames = [
+        "Circuit",
+        "Upstream_Equipment_Number",
+        "Upstream_Equipment_ID",
+        "Downstream_Equipment_Number",
+        "Downstream_Equipment_ID",
+        "Check_Type",
+        "Phase_Note",
+        "Ground_Note",
+    ]
+    with open(output_path, "w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(indeterminate)
+    print(f"Wrote {len(indeterminate)} indeterminate pair(s) to {output_path}")
 
 
 # ---------------------------------------------------------------------------
@@ -816,19 +879,25 @@ def main() -> None:
 
     all_violations: list[dict] = []
     all_discrepancies: list[dict] = []
+    all_indeterminate: list[dict] = []
     for cyme_path in cyme_files:
         circuit = cyme_path.stem.rsplit("_", 1)[-1]
-        violations, discrepancies = check_circuit(circuit, cyme_path, device_map, recloser_db, relay_settings, tripsaver_db)
+        violations, discrepancies, indeterminate = check_circuit(
+            circuit, cyme_path, device_map, recloser_db, relay_settings, tripsaver_db)
         if discrepancies:
             print(f"  Circuit {circuit}: voltage mismatch — skipped")
         elif violations:
             print(f"  Circuit {circuit}: {len(violations)} violation(s)")
+        if indeterminate:
+            print(f"  Circuit {circuit}: {len(indeterminate)} indeterminate pair(s)")
         all_violations.extend(violations)
         all_discrepancies.extend(discrepancies)
+        all_indeterminate.extend(indeterminate)
 
     print()
     write_violations(all_violations, OUTPUT_PATH)
     write_discrepancies(all_discrepancies, DISCREPANCY_PATH)
+    write_indeterminate(all_indeterminate, INDETERMINATE_PATH)
     print(f"\nDone. {len(all_violations)} total violation(s) across {len(cyme_files)} circuit(s).")
 
 
