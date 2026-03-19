@@ -31,6 +31,16 @@ relay_settings = {
 other_relays = ['IAC51', 'IAC53', 'CO-8']
 # ────────────────────────────────────────────────────────────────────────────
 
+# Ordered union of all setting names across all relay types
+_seen: set = set()
+ALL_SETTINGS: list[str] = []
+for _names in relay_settings.values():
+    for _n in _names:
+        if _n not in _seen:
+            _seen.add(_n)
+            ALL_SETTINGS.append(_n)
+
+
 def tryfloat(s):
     try:
         return float(s)
@@ -80,6 +90,8 @@ def fetch_relay_settings_for_station(sta: dict) -> list[dict]:
 
     for cb in parse_cb_list(eq_tree):
         cb_num = cb_num_from(cb)
+        circuit_id = f"{sta['id']:04d}{cb_num}"
+
         breaker_tree = get(
             f"{BASE_URL}?a=4&lid={aspen}&cid={cb.replace(' ', '%20')}&c=DEC"
         )
@@ -119,7 +131,8 @@ def fetch_relay_settings_for_station(sta: dict) -> list[dict]:
             else:
                 continue
 
-        base = {
+        row = {
+            "Circuit_ID":   circuit_id,
             "Station_ID":   sta["id"],
             "Station_Name": sta["name"],
             "Aspen_ID":     aspen,
@@ -127,11 +140,9 @@ def fetch_relay_settings_for_station(sta: dict) -> list[dict]:
             "Relay_ID":     relay_id,
             "Relay_Type":   relay_type,
         }
-        if settings:
-            for name, val in settings.items():
-                rows.append({**base, "Setting_Name": name, "Setting_Value": val})
-        else:
-            rows.append({**base, "Setting_Name": "", "Setting_Value": ""})
+        for name in ALL_SETTINGS:
+            row[name] = settings.get(name, "")
+        rows.append(row)
 
     return rows
 
@@ -156,8 +167,8 @@ def main():
     ]
     print(f"{len(in_scope)} stations in scope (of {len(all_stations)} total)")
 
-    fieldnames = ["Station_ID","Station_Name","Aspen_ID","Breaker_ID",
-                  "Relay_ID","Relay_Type","Setting_Name","Setting_Value"]
+    fieldnames = ["Circuit_ID", "Station_ID", "Station_Name", "Aspen_ID", "Breaker_ID",
+                  "Relay_ID", "Relay_Type"] + ALL_SETTINGS
     total_rows = 0
 
     with open(OUTPUT_PATH, "w", newline="", encoding="utf-8") as fh:
