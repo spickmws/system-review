@@ -29,4 +29,4 @@ data/reports/
 src/results.csv
 violations_report.csv
 data/references/RecloserDatabase.xlsx
-voltage_siscrepancies.csv
+voltage_discrepancies.csv
