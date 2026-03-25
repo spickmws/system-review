@@ -63,13 +63,13 @@ def parse_cb_list(eq_tree: ET.Element) -> list[str]:
     """Reproduce lines 1009–1016 of CPAT_Report_Batch.py."""
     texts = [e.text for e in eq_tree if e.text]
     cb_list = [t for t in texts if t.isnumeric() and len(t) == 4]
-    cb_list += [t for t in texts if re.search(r'^OCR\d+ \([0-9]{4}\)', t)]
-    cb_list += [t for t in texts if re.search(r'^\d+ \([0-9]{4}\)', t)]
-    cb_list += [t for t in texts if re.search(r'^[0-9]{4} \(\d+\)', t)]
-    cb_list += [t for t in texts if re.search(r'^[0-9]{4} \(OCR\d+\)', t)]
-    cb_list += [t for t in texts if re.search(r'^[0-9]{4} \(NEW\)', t)]
+    cb_list += [t for t in texts if re.search(r'^OCR\d+\s+\([0-9]{4}\)', t)]
+    cb_list += [t for t in texts if re.search(r'^\d+\s+\([0-9]{4}\)', t)]
+    cb_list += [t for t in texts if re.search(r'^[0-9]{4}\s+\(\d+\)', t)]
+    cb_list += [t for t in texts if re.search(r'^[0-9]{4}\s+\(OCR\d+\)', t)]
+    cb_list += [t for t in texts if re.search(r'^[0-9]{4}\s+\(NEW\)', t)]
     cb_list += [t for t in texts if len(t) == 4 and re.search(r'^[0-9]{2}AX', t)]
-    cb_list += [t for t in texts if re.search(r'^[0-9]{4} \[NEW\]', t)]
+    cb_list += [t for t in texts if re.search(r'^[0-9]{4}\s+\[NEW\]', t)]
     return cb_list
 
 def cb_num_from(cb: str) -> str:
