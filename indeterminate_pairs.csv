@@ -1,0 +1,662 @@
+Circuit,Upstream_Equipment_Number,Upstream_Equipment_ID,Downstream_Equipment_Number,Downstream_Equipment_ID,Check_Type,Phase_Note,Ground_Note
+67083402,67083402,DEFAULT_BREAKER,38922408,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,245P31_662349529,VPST_800A,38915716,K_65A,Recloser-Fuse,Phase upstream: FID 662349529 not in RecloserDatabase,Ground upstream: FID 662349529 not in RecloserDatabase
+67083402,67083402,DEFAULT_BREAKER,38921353,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38933177,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38930358,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38928250,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38928945,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38923405,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38933291,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38917434,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,5V24_786120355,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38927598,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38930779,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,10T37 5V20_38927371,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,752098614,UNK_UNKA,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR'); Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67083402,67083402,DEFAULT_BREAKER,38936996,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,245P31_662349529,VPST_800A,38917024,T_80A,Recloser-Fuse,Phase upstream: FID 662349529 not in RecloserDatabase,Ground upstream: FID 662349529 not in RecloserDatabase
+67083402,67083402,DEFAULT_BREAKER,38919750,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38936990,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38931053,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,17T1_38924677,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,2LDT65_38934630,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,5V21_38924223,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38925210,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38918531,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38926727,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38924094,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,245P31_662349529,VPST_800A,49853720,T_100A,Recloser-Fuse,Phase upstream: FID 662349529 not in RecloserDatabase,Ground upstream: FID 662349529 not in RecloserDatabase
+67083402,38924058,K_20A,38929915,K_25A,Fuse-Fuse,,"Ground upstream: i=922.0 (log10=2.9647) is outside the data range [10^1.5919, 10^2.9356]."
+67083402,67083402,DEFAULT_BREAKER,2C7C45_786120346,T_80A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,23BG67_671977350,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38935508,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,245P31_662349529,VPST_800A,15L18_38935334,K_50A,Recloser-Fuse,,Ground upstream: FID 662349529 not in RecloserDatabase
+67083402,67083402,DEFAULT_BREAKER,38918555,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,5V26_788636722,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38920520,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38933027,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,4T11_38930843,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,4T19_38930915,T_80A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,2C1F10_784763829,T_40A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38933261,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,4T39_38928842,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,2LDT65_38929174,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38924740,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38928905,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38933594,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,5V17_38932717,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38936074,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,38918366,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,10T37 5V20_38923385,K_25A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,398423203,K_25A,Breaker-Fuse,,"Ground upstream: Relay setting error ('CTR'); Ground downstream: i=2830.0 (log10=3.4518) is outside the data range [10^1.7717, 10^3.4144]."
+67083402,67083402,DEFAULT_BREAKER,5V24_38923155,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,671522038,K_65A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,10T35_38931109,K_30A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67083402,67083402,DEFAULT_BREAKER,1X9L62_653496754,VPST_800A,Breaker-Recloser,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67083402,1X9L62_653496754,VPST_800A,245P31_662349529,VPST_800A,Recloser-Recloser,Phase downstream: FID 662349529 not in RecloserDatabase,Ground downstream: FID 662349529 not in RecloserDatabase
+67083402,245P31_662349529,VPST_800A,2FFR87_85087547,NVTT_800A,Recloser-Recloser,Phase upstream: FID 662349529 not in RecloserDatabase,Ground upstream: FID 662349529 not in RecloserDatabase
+67083402,67083402,DEFAULT_BREAKER,1JLY68_784763854,E_100A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67131201,67131201,DEFAULT_BREAKER,38926513,K_30A,Breaker-Fuse,"Phase downstream: i=4853.0 (log10=3.6860) is outside the data range [10^1.8914, 10^3.5273].","Ground downstream: i=5210.0 (log10=3.7168) is outside the data range [10^1.8914, 10^3.5273]."
+67131202,1LJX86_38919316,K_100A,01AR484_406667729,K_20A,Fuse-Fuse,,"Ground downstream: i=2901.0 (log10=3.4625) is outside the data range [10^1.6881, 10^3.3354]."
+67131202,1LJX70_521579433,VPST_800A,2BYC21_780847145,K_25A,Recloser-Fuse,,"Ground downstream: i=2605.0 (log10=3.4158) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,67131202,DEFAULT_BREAKER,A35_38922882,K_20A,Breaker-Fuse,"Phase downstream: i=4094.0 (log10=3.6121) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=3698.0 (log10=3.5680) is outside the data range [10^1.6881, 10^3.3354]."
+67131202,4S8_790349987,T_100A,38926265,K_25A,Fuse-Fuse,"Phase downstream: i=3957.0 (log10=3.5974) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3495.0 (log10=3.5434) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,38948449,T_40A,38926363,K_25A,Fuse-Fuse,,"Ground downstream: i=3005.0 (log10=3.4778) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJY03_499306320,T_80A,38927808,K_25A,Fuse-Fuse,"Phase downstream: i=3287.0 (log10=3.5168) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2637.0 (log10=3.4211) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,10S8_38927877,T_80A,85094679,K_25A,Fuse-Fuse,"Phase downstream: i=3200.0 (log10=3.5051) is outside the data range [10^1.7717, 10^3.4144].",
+67131202,38948449,T_40A,38926373,K_25A,Fuse-Fuse,,"Ground downstream: i=2928.0 (log10=3.4666) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,10S8_38927877,T_80A,160666872,K_25A,Fuse-Fuse,"Phase downstream: i=3195.0 (log10=3.5045) is outside the data range [10^1.7717, 10^3.4144].",
+67131202,38926413,T_80A,38926489,K_25A,Fuse-Fuse,"Phase downstream: i=4630.0 (log10=3.6656) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4684.0 (log10=3.6706) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,38927891,T_40A,10SEC2_38927852,K_25A,Fuse-Fuse,,"Ground downstream: i=2659.0 (log10=3.4247) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJX70_521579433,VPST_800A,12S11-2_38927869,K_25A,Recloser-Fuse,,"Ground downstream: i=2709.0 (log10=3.4328) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJX70_521579433,VPST_800A,38916154,K_25A,Recloser-Fuse,,"Ground downstream: i=2725.0 (log10=3.4354) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,67131202,DEFAULT_BREAKER,38929087,K_25A,Breaker-Fuse,,"Ground downstream: i=3997.0 (log10=3.6017) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,10SEC2_38927852,K_25A,1FHA13_38927860,K_25A,Fuse-Fuse,,"Ground upstream: i=2617.0 (log10=3.4178) is outside the data range [10^1.6981, 10^3.0549].; Ground downstream: i=2617.0 (log10=3.4178) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJX70_521579433,VPST_800A,23NN85_38927939,K_25A,Recloser-Fuse,"Phase downstream: i=3489.0 (log10=3.5427) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2872.0 (log10=3.4582) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJX70_521579433,VPST_800A,38927923,K_25A,Recloser-Fuse,"Phase downstream: i=3229.0 (log10=3.5091) is outside the data range [10^1.7717, 10^3.4144].",
+67131202,1LJX70_521579433,VPST_800A,1LJX72_38927830,K_25A,Recloser-Fuse,,"Ground downstream: i=3336.0 (log10=3.5232) is outside the data range [10^1.7717, 10^3.4144]."
+67131202,1LJX70_521579433,VPST_800A,38927949,K_25A,Recloser-Fuse,"Phase downstream: i=3748.0 (log10=3.5738) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3196.0 (log10=3.5046) is outside the data range [10^1.7717, 10^3.4144]."
+67131203,1DTQ80_852921571,VPST_800A,1DRD79_38923947,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,D14_668756180,TRIPSAVER_II_200A,1CTD92_525216425,K_25A,TripSaver-Fuse,"Phase downstream: i=3643.0 (log10=3.5615) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3116.0 (log10=3.4936) is outside the data range [10^1.7717, 10^3.4144]."
+67131203,1DTQ80_852921571,VPST_800A,396199184,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1DTQ80_852921571,VPST_800A,1E2B40_38935104,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1DTQ80_852921571,VPST_800A,1DRP47_38935098,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,2Q9E19_854209836,VPST_800A,373475301,K_20A,Recloser-Fuse,"Phase downstream: i=2851.0 (log10=3.4550) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2183.0 (log10=3.3391) is outside the data range [10^1.6881, 10^3.3354]."
+67131203,1DTQ80_852921571,VPST_800A,1DRP52_38935112,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1DTQ80_852921571,VPST_800A,1E2B38_38916043,K_30A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1CLQ97_668756171,TRIPSAVER_II_200A,2J0A01_787691914,K_25A,TripSaver-Fuse,"Phase downstream: i=3853.0 (log10=3.5858) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3432.0 (log10=3.5355) is outside the data range [10^1.7717, 10^3.4144]."
+67131203,1DTQ80_852921571,VPST_800A,1DMX88_38935130,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1DTQ80_852921571,VPST_800A,1DTQ78_38935120,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,2NLB92_789491146,TRIPSAVER_II_200A,2NLB94_866323137,K_25A,TripSaver-Fuse,"Phase downstream: i=4211.0 (log10=3.6244) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3969.0 (log10=3.5987) is outside the data range [10^1.7717, 10^3.4144]."
+67131203,1DTQ80_852921571,VPST_800A,1E2B42_38916074,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,67131203,DEFAULT_BREAKER,38920807,K_25A,Breaker-Fuse,"Phase downstream: i=4527.0 (log10=3.6558) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4522.0 (log10=3.6553) is outside the data range [10^1.7717, 10^3.4144]."
+67131203,393653291,T_65A,38926689,K_20A,Fuse-Fuse,,"Ground downstream: i=2193.0 (log10=3.3410) is outside the data range [10^1.6881, 10^3.3354]."
+67131203,1DTQ80_852921571,VPST_800A,1DRP47_782003736,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,1DTQ80_852921571,VPST_800A,1DTQ74_38935114,T_80A,Recloser-Fuse,,Ground upstream: FID 852921571 not in RecloserDatabase
+67131203,2QDN60_854111083,VPST_800A,1DTQ80_852921571,VPST_800A,Recloser-Recloser,Phase downstream: FID 852921571 not in RecloserDatabase,Ground downstream: FID 852921571 not in RecloserDatabase
+67131204,256K71_38921319,T_80A,1WQL86_654741415,K_20A,Fuse-Fuse,,"Ground downstream: i=2279.0 (log10=3.3577) is outside the data range [10^1.6881, 10^3.3354]."
+67131204,67131204,DEFAULT_BREAKER,391793191,K_20A,Breaker-Fuse,"Phase downstream: i=4338.0 (log10=3.6373) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=4200.0 (log10=3.6232) is outside the data range [10^1.6881, 10^3.3354]."
+67131204,38923901,T_80A,38918798,K_30A,Fuse-Fuse,"Phase downstream: i=3645.0 (log10=3.5617) is outside the data range [10^1.8914, 10^3.5273].",
+67131204,67131204,DEFAULT_BREAKER,2A11-2_38923925,K_20A,Breaker-Fuse,"Phase downstream: i=3070.0 (log10=3.4871) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2461.0 (log10=3.3911) is outside the data range [10^1.6881, 10^3.3354]."
+67131204,38933720,T_40A,38935128,K_20A,Fuse-Fuse,,"Ground downstream: i=3210.0 (log10=3.5065) is outside the data range [10^1.6881, 10^3.3354]."
+67131204,2A6-1_39010595,NVSS_800A,1RGM13_566044088,K_20A,Recloser-Fuse,,"Ground downstream: i=2571.0 (log10=3.4101) is outside the data range [10^1.6881, 10^3.3354]."
+67271201,1LCK68_39010960,VPST_800A,38929550,K_20A,Recloser-Fuse,"Phase downstream: i=2870.0 (log10=3.4579) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2413.0 (log10=3.3826) is outside the data range [10^1.6881, 10^3.3354]."
+67271201,1TEN99_655793574,TRIPSAVER_II_100A,38920938,K_20A,TripSaver-Fuse,,"Ground downstream: i=3230.0 (log10=3.5092) is outside the data range [10^1.6881, 10^3.3354]."
+67271201,1LCK68_39010960,VPST_800A,38899161,K_25A,Recloser-Fuse,"Phase downstream: i=3477.0 (log10=3.5412) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3170.0 (log10=3.5011) is outside the data range [10^1.7717, 10^3.4144]."
+67271201,1LCK68_39010960,VPST_800A,38922836,K_20A,Recloser-Fuse,"Phase downstream: i=2733.0 (log10=3.4366) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2265.0 (log10=3.3551) is outside the data range [10^1.6881, 10^3.3354]."
+67271203,67271203,DEFAULT_BREAKER,38917616,K_20A,Breaker-Fuse,"Phase downstream: i=3229.0 (log10=3.5091) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2733.0 (log10=3.4366) is outside the data range [10^1.6881, 10^3.3354]."
+67271203,38927187,T_80A,38922616,K_25A,Fuse-Fuse,"Phase downstream: i=3069.0 (log10=3.4870) is outside the data range [10^1.7717, 10^3.4144].",
+67271203,243R91_38923772,T_80A,22DT56_697710668,UNK_UNKA,Fuse-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67271203,67271203,DEFAULT_BREAKER,38920994,K_20A,Breaker-Fuse,"Phase downstream: i=4678.0 (log10=3.6701) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=5064.0 (log10=3.7045) is outside the data range [10^1.6881, 10^3.3354]."
+67271203,1HFM73_524679841,T_80A,1HFM81_524679832,K_25A,Fuse-Fuse,"Phase downstream: i=3813.0 (log10=3.5813) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3547.0 (log10=3.5499) is outside the data range [10^1.7717, 10^3.4144]."
+67271203,243R91_38923772,T_80A,38924702,K_20A,Fuse-Fuse,"Phase downstream: i=2680.0 (log10=3.4281) is outside the data range [10^1.6881, 10^3.3354].",
+67271204,W5_394524157,TRIPSAVER_II_100A,38927959,K_20A,TripSaver-Fuse,,"Ground downstream: i=2607.0 (log10=3.4161) is outside the data range [10^1.6881, 10^3.3354]."
+67301202,67301202,DEFAULT_BREAKER,38915624,K_25A,Breaker-Fuse,,"Ground downstream: i=3277.0 (log10=3.5155) is outside the data range [10^1.7717, 10^3.4144]."
+67301203,10C13_785767734,UNK_UNKA,38899567,K_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,10C13_785767734,UNK_UNKA,1E8G79_38923495,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,10C13_785767734,UNK_UNKA,1E3K71_38927020,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,9C4_39010581,L_200A,10C13_785767734,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,10C13_785767734,UNK_UNKA,10CNW5_38930525,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,9C4_39010581,L_200A,10C13_785767731,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,10C13_785767734,UNK_UNKA,10CN1_38920090,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,1K1F03_39010568,VPST_800A,2Q7T87_38918950,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,1K1F03_39010568,VPST_800A,785767748,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,9C4_39010581,L_200A,785767729,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67301203,10C13_785767734,UNK_UNKA,10CN9_38929386,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67311201,2BDH91_781706344,K_25A,2BDJ01_38917030,K_25A,Fuse-Fuse,,"Ground upstream: i=1243.0 (log10=3.0945) is outside the data range [10^1.6981, 10^3.0549]."
+67311201,2BDH91_781706344,K_25A,2BDH98_38936425,K_25A,Fuse-Fuse,,"Ground upstream: i=1262.0 (log10=3.1011) is outside the data range [10^1.6981, 10^3.0549]."
+67311202,3P13_654578857,TRIPSAVER_II_200A,779571456,UNK_UNKA,TripSaver-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67311202,67311202,DEFAULT_BREAKER,38927612,K_25A,Breaker-Fuse,,"Ground downstream: i=4873.0 (log10=3.6878) is outside the data range [10^1.7717, 10^3.4144]."
+67311202,397675947,T_40A,38918778,K_25A,Fuse-Fuse,,"Ground downstream: i=2850.0 (log10=3.4548) is outside the data range [10^1.7717, 10^3.4144]."
+67311202,779571456,UNK_UNKA,20QR39_668555031,K_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67311202,2DCC07_38952186,K_80A,3P9-14-2_38917612,K_25A,Fuse-Fuse,"Phase downstream: i=3074.0 (log10=3.4877) is outside the data range [10^1.7717, 10^3.4144].",
+67311202,2P13_38916573,T_80A,1NKB17_573476710,K_30A,Fuse-Fuse,"Phase downstream: i=3406.0 (log10=3.5322) is outside the data range [10^1.8914, 10^3.5273].",
+67311202,2P13_38916573,T_80A,38947387,K_25A,Fuse-Fuse,,"Ground downstream: i=2941.0 (log10=3.4685) is outside the data range [10^1.7717, 10^3.4144]."
+67311202,3P12-1_654578866,TRIPSAVER_II_100A,38923276,K_25A,TripSaver-Fuse,"Phase downstream: i=3258.0 (log10=3.5130) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2852.0 (log10=3.4551) is outside the data range [10^1.7717, 10^3.4144]."
+67311202,P12_654578881,TRIPSAVER_II_200A,38931583,K_25A,TripSaver-Fuse,,"Ground downstream: i=2926.0 (log10=3.4663) is outside the data range [10^1.7717, 10^3.4144]."
+67321202,1M1Y74_39010542,VPSS_800A,38930055,K_25A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,01BD561_39010910,VPST_800A,405920443,K_20A,Recloser-Fuse,"Phase downstream: i=2588.0 (log10=3.4130) is outside the data range [10^1.6881, 10^3.3354].",
+67321202,1M1Y74_39010542,VPSS_800A,38915778,T_65A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,01BD561_39010910,VPST_800A,656213999,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67321202,1M1Y74_39010542,VPSS_800A,38930115,K_25A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,1M1Y74_39010542,VPSS_800A,38933197,K_25A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,1M1Y74_39010542,VPSS_800A,1M1Y75_38931575,T_65A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,1M1Y74_39010542,VPSS_800A,38935386,K_25A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,1M1Y74_39010542,VPSS_800A,38916543,T_65A,Recloser-Fuse,,Ground upstream: FID 39010542 not in RecloserDatabase
+67321202,67321202,DEFAULT_BREAKER,1M1Y74_39010542,VPSS_800A,Breaker-Recloser,,Ground downstream: FID 39010542 not in RecloserDatabase
+67351201,67351201,DEFAULT_BREAKER,2K1_769154275,UNK_UNKA,Breaker-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67351201,67351201,DEFAULT_BREAKER,38947506,K_25A,Breaker-Fuse,,"Ground downstream: i=4376.0 (log10=3.6411) is outside the data range [10^1.7717, 10^3.4144]."
+67351201,2K6_38928138,T_80A,2KM2_38919391,K_25A,Fuse-Fuse,"Phase downstream: i=3371.0 (log10=3.5278) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2760.0 (log10=3.4409) is outside the data range [10^1.7717, 10^3.4144]."
+67351201,2K6_38928138,T_80A,2FEM96_38950047,K_25A,Fuse-Fuse,"Phase downstream: i=3377.0 (log10=3.5285) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2767.0 (log10=3.4420) is outside the data range [10^1.7717, 10^3.4144]."
+67351201,67351201,DEFAULT_BREAKER,2J6K26_779955070,K_20A,Breaker-Fuse,,"Ground downstream: i=3053.0 (log10=3.4847) is outside the data range [10^1.6881, 10^3.3354]."
+67351201,38922391,T_40A,38942119,K_25A,Fuse-Fuse,,"Ground downstream: i=3036.0 (log10=3.4823) is outside the data range [10^1.7717, 10^3.4144]."
+67351203,165585365,K_80A,2BMC26_786708109,K_65A,Fuse-Fuse,"Phase upstream: i=4341.0 (log10=3.6376) is outside the data range [10^2.1904, 10^3.5585].","Ground upstream: i=4071.0 (log10=3.6097) is outside the data range [10^2.1904, 10^3.5585]."
+67351204,67351204,DEFAULT_BREAKER,38952967,K_20A,Breaker-Fuse,"Phase downstream: i=3264.0 (log10=3.5138) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2638.0 (log10=3.4213) is outside the data range [10^1.6881, 10^3.3354]."
+67351204,38930479,K_65A,453072833,K_25A,Fuse-Fuse,"Phase upstream: i=4340.0 (log10=3.6375) is outside the data range [10^2.0960, 10^3.4551].; Phase downstream: i=4340.0 (log10=3.6375) is outside the data range [10^1.7717, 10^3.4144].","Ground upstream: i=4070.0 (log10=3.6096) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: i=4070.0 (log10=3.6096) is outside the data range [10^1.7717, 10^3.4144]."
+67351204,67351204,DEFAULT_BREAKER,5HL3_38924789,K_25A,Breaker-Fuse,"Phase downstream: i=2890.0 (log10=3.4609) is outside the data range [10^1.7717, 10^3.4144].",
+67351204,67351204,DEFAULT_BREAKER,5HL2_38916555,K_25A,Breaker-Fuse,"Phase downstream: i=2927.0 (log10=3.4664) is outside the data range [10^1.7717, 10^3.4144].",
+67361201,V5_39011015,CMR_140A,38944066,K_25A,Recloser-Fuse,,"Ground downstream: i=2756.0 (log10=3.4403) is outside the data range [10^1.7717, 10^3.4144]."
+67361202,20RG29_671672016,VPST_800A,385111742,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,10L13_38918475,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38916128,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,38923627,K_140A,3LF4_843818621,K_20A,Fuse-Fuse,,"Ground downstream: i=2532.0 (log10=3.4035) is outside the data range [10^1.6881, 10^3.3354]."
+67361202,26JE45_787777264,VPST_800A,1YJT62_659520330,K_25A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L5_759797943,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920298,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38917624,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,8L13_38930943,K_25A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,2W6Q84_784252046,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,243N19_786493491,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920353,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920345,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,217K17_668739424,K_25A,217K17_781989268,T_40A,Fuse-Fuse,,"Ground upstream: i=1349.0 (log10=3.1300) is outside the data range [10^1.6981, 10^3.0549]."
+67361202,217K17_668739424,K_25A,2HMH20_784312558,T_40A,Fuse-Fuse,,"Ground upstream: i=1344.0 (log10=3.1284) is outside the data range [10^1.6981, 10^3.0549]."
+67361202,217K17_668739424,K_25A,2HMH20_784312560,T_40A,Fuse-Fuse,,"Ground upstream: i=1344.0 (log10=3.1284) is outside the data range [10^1.6981, 10^3.0549]."
+67361202,26JE45_787777264,VPST_800A,11L5_38918517,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,24CH34_758664290,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,2P3E96_809788385,K_25A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L4_38918509,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,38923627,K_140A,2C6Q11_786699599,K_20A,Fuse-Fuse,,"Ground downstream: i=2814.0 (log10=3.4493) is outside the data range [10^1.6881, 10^3.3354]."
+67361202,26JE45_787777264,VPST_800A,8L17_792874337,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L6_787944725,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L2_759797950,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,243N12_786493524,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L6_38923659,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,9L2_38923637,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38931264,K_25A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920290,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,10L6_38918416,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26DG57_781989264,K_25A,217K17_668739424,K_25A,Fuse-Fuse,,"Ground upstream: i=1349.0 (log10=3.1300) is outside the data range [10^1.6981, 10^3.0549]."
+67361202,20RG29_671672016,VPST_800A,38920332,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,38917811,K_80A,22QX94_681178712,K_20A,Fuse-Fuse,,"Ground downstream: i=2241.0 (log10=3.3504) is outside the data range [10^1.6881, 10^3.3354]."
+67361202,20RG29_671672016,VPST_800A,59K10_38920284,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,26LP60_784213359,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,10L6_38918410,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,243N18_792874351,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920320,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,8L10_38918382,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,9L6_38918740,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,59K10_53275411,K_25A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,243N16_786493541,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,24RA67_792874344,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920326,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,22BM35_675734461,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,59K13_38920312,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,8L10_38935536,K_25A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920395,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,11L2_38936431,K_25A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920274,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,38920403,T_40A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,217K17_668739424,K_25A,217K17_784312562,T_40A,Fuse-Fuse,,"Ground upstream: i=1349.0 (log10=3.1300) is outside the data range [10^1.6981, 10^3.0549]."
+67361202,20RG29_671672016,VPST_800A,38930817,K_25A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,26LP68_792874329,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,BL17_792874335,T_80A,Recloser-Fuse,,Ground upstream: FID 787777264 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,366665064,K_20A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,20RG29_671672016,VPST_800A,59K13_38936830,K_25A,Recloser-Fuse,,Ground upstream: FID 671672016 not in RecloserDatabase
+67361202,26JE45_787777264,VPST_800A,20RG29_671672016,VPST_800A,Recloser-Recloser,Phase upstream: FID 787777264 not in RecloserDatabase; Phase downstream: FID 671672016 not in RecloserDatabase,Ground upstream: FID 787777264 not in RecloserDatabase; Ground downstream: FID 671672016 not in RecloserDatabase
+67361202,249W17_781684172,VPST_800A,26JE45_787777264,VPST_800A,Recloser-Recloser,Phase downstream: FID 787777264 not in RecloserDatabase,Ground downstream: FID 787777264 not in RecloserDatabase
+67371201,F10_655909615,TRIPSAVER_II_100A,38926025,K_25A,TripSaver-Fuse,,"Ground downstream: i=2949.0 (log10=3.4697) is outside the data range [10^1.7717, 10^3.4144]."
+67371201,2F4_38929077,K_80A,38935654,K_25A,Fuse-Fuse,,"Ground downstream: i=2697.0 (log10=3.4309) is outside the data range [10^1.7717, 10^3.4144]."
+67371201,2ACF99_39084989,K_40A,38931699,T_65A,Fuse-Fuse,,"Ground upstream: i=2163.0 (log10=3.3351) is outside the data range [10^1.9000, 10^3.2505]."
+67371201,67371201,DEFAULT_BREAKER,405761630,K_20A,Breaker-Fuse,"Phase downstream: i=3473.0 (log10=3.5407) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=3400.0 (log10=3.5315) is outside the data range [10^1.6881, 10^3.3354]."
+67371201,2F6_38918264,K_80A,38942351,K_25A,Fuse-Fuse,"Phase downstream: i=3026.0 (log10=3.4809) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2689.0 (log10=3.4296) is outside the data range [10^1.7717, 10^3.4144]."
+67371201,67371201,DEFAULT_BREAKER,38915921,K_25A,Breaker-Fuse,,"Ground downstream: i=3777.0 (log10=3.5771) is outside the data range [10^1.7717, 10^3.4144]."
+67371201,2F7_655909620,TRIPSAVER_II_200A,1X7M48_652096535,K_20A,TripSaver-Fuse,,"Ground downstream: i=2614.0 (log10=3.4173) is outside the data range [10^1.6881, 10^3.3354]."
+67371202,1EHY79_38930585,K_65A,38920164,K_20A,Fuse-Fuse,,"Ground downstream: i=2405.0 (log10=3.3811) is outside the data range [10^1.6881, 10^3.3354]."
+67371202,1G25_752476290,UNK_UNKA,1XJJ92_652384519,K_20A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67371202,1EJA37_473014171,VPST_800A,1G25_752476290,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67371202,2M3W42_38923971,T_65A,88268846,K_25A,Fuse-Fuse,"Phase downstream: i=2764.0 (log10=3.4415) is outside the data range [10^1.7717, 10^3.4144].",
+67371202,67371202,DEFAULT_BREAKER,1EHY76_38935672,K_20A,Breaker-Fuse,,"Ground downstream: i=2658.0 (log10=3.4246) is outside the data range [10^1.6881, 10^3.3354]."
+67371202,G15_38923488,K_80A,38919356,K_25A,Fuse-Fuse,"Phase downstream: i=2921.0 (log10=3.4655) is outside the data range [10^1.7717, 10^3.4144].",
+67371202,67371202,DEFAULT_BREAKER,G2_38918333,K_25A,Breaker-Fuse,"Phase downstream: i=3935.0 (log10=3.5949) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4310.0 (log10=3.6345) is outside the data range [10^1.7717, 10^3.4144]."
+67381202,67381202,DEFAULT_BREAKER,38916341,K_25A,Breaker-Fuse,"Phase downstream: i=2773.0 (log10=3.4429) is outside the data range [10^1.7717, 10^3.4144].",
+67381202,67381202,DEFAULT_BREAKER,38919812,K_25A,Breaker-Fuse,"Phase downstream: i=3109.0 (log10=3.4926) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3034.0 (log10=3.4820) is outside the data range [10^1.7717, 10^3.4144]."
+67381202,2L1_38931897,T_80A,38927587,K_25A,Fuse-Fuse,,"Ground downstream: i=3409.0 (log10=3.5326) is outside the data range [10^1.7717, 10^3.4144]."
+67381203,1T9C48_656016340,TRIPSAVER_II_100A,38932448,K_25A,TripSaver-Fuse,,"Ground downstream: i=2753.0 (log10=3.4398) is outside the data range [10^1.7717, 10^3.4144]."
+67381203,67381203,DEFAULT_BREAKER,38929640,K_25A,Breaker-Fuse,,"Ground downstream: i=3358.0 (log10=3.5261) is outside the data range [10^1.7717, 10^3.4144]."
+67381203,1T9C48_656016340,TRIPSAVER_II_100A,38928907,K_25A,TripSaver-Fuse,,"Ground downstream: i=2753.0 (log10=3.4398) is outside the data range [10^1.7717, 10^3.4144]."
+67381203,67381203,DEFAULT_BREAKER,38931623,K_25A,Breaker-Fuse,,"Ground downstream: i=2623.0 (log10=3.4188) is outside the data range [10^1.7717, 10^3.4144]."
+67381204,67381204,DEFAULT_BREAKER,L4_38925810,K_20A,Breaker-Fuse,,"Ground downstream: i=3853.0 (log10=3.5858) is outside the data range [10^1.6881, 10^3.3354]."
+67391201,67391201,DEFAULT_BREAKER,15U5_38926984,K_25A,Breaker-Fuse,"Phase downstream: i=2858.0 (log10=3.4561) is outside the data range [10^1.7717, 10^3.4144].",
+67391201,1LMG70_567873083,VPST_800A,405625531,K_20A,Recloser-Fuse,,"Ground downstream: i=2176.0 (log10=3.3377) is outside the data range [10^1.6881, 10^3.3354]."
+67391201,38932324,K_80A,210T44_679178107,K_25A,Fuse-Fuse,,"Ground upstream: i=3644.0 (log10=3.5616) is outside the data range [10^2.1904, 10^3.5585].; Ground downstream: i=3644.0 (log10=3.5616) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,38932324,K_80A,210T44_679178105,K_25A,Fuse-Fuse,,"Ground upstream: i=3644.0 (log10=3.5616) is outside the data range [10^2.1904, 10^3.5585].; Ground downstream: i=3644.0 (log10=3.5616) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,1XMX15_670478630,TRIPSAVER_II_200A,38927729,K_25A,TripSaver-Fuse,"Phase downstream: i=3402.0 (log10=3.5317) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2887.0 (log10=3.4604) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,38922313,T_65A,38915600,K_20A,Fuse-Fuse,,"Ground downstream: i=2167.0 (log10=3.3359) is outside the data range [10^1.6881, 10^3.3354]."
+67391201,67391201,DEFAULT_BREAKER,38932440,K_25A,Breaker-Fuse,,"Ground downstream: i=3546.0 (log10=3.5497) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,38916419,K_80A,38949767,K_25A,Fuse-Fuse,"Phase downstream: i=3291.0 (log10=3.5173) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2735.0 (log10=3.4370) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,UHE4_39084851,T_40A,26TE10_38931175,K_25A,Fuse-Fuse,,"Ground downstream: i=2637.0 (log10=3.4211) is outside the data range [10^1.7717, 10^3.4144]."
+67391201,1HTB88_456774441,T_50A,789645277,UNK_UNKA,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67391201,67391201,DEFAULT_BREAKER,15U8_38920349,K_25A,Breaker-Fuse,"Phase downstream: i=2700.0 (log10=3.4314) is outside the data range [10^1.7717, 10^3.4144].",
+67411201,38918818,T_80A,38923451,K_25A,Fuse-Fuse,,"Ground downstream: i=2971.0 (log10=3.4729) is outside the data range [10^1.7717, 10^3.4144]."
+67411201,67411201,DEFAULT_BREAKER,396168967,K_20A,Breaker-Fuse,"Phase downstream: i=2328.0 (log10=3.3670) is outside the data range [10^1.6881, 10^3.3354].",
+67411202,2DMD68_789302154,T_80A,1YNX96_669043877,K_20A,Fuse-Fuse,,"Ground downstream: i=2354.0 (log10=3.3718) is outside the data range [10^1.6881, 10^3.3354]."
+67411202,67411202,DEFAULT_BREAKER,38925204,K_25A,Breaker-Fuse,"Phase downstream: i=2661.0 (log10=3.4250) is outside the data range [10^1.7717, 10^3.4144].",
+67411202,1FDL03_39084453,T_80A,38923713,K_20A,Fuse-Fuse,"Phase downstream: i=2981.0 (log10=3.4744) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2933.0 (log10=3.4673) is outside the data range [10^1.6881, 10^3.3354]."
+67411202,38923830,T_50A,38929460,K_20A,Fuse-Fuse,"Phase downstream: i=2599.0 (log10=3.4148) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2326.0 (log10=3.3666) is outside the data range [10^1.6881, 10^3.3354]."
+67411202,67411202,DEFAULT_BREAKER,38925192,K_20A,Breaker-Fuse,"Phase downstream: i=2622.0 (log10=3.4186) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2368.0 (log10=3.3744) is outside the data range [10^1.6881, 10^3.3354]."
+67411202,67411202,DEFAULT_BREAKER,38918098,K_25A,Breaker-Fuse,"Phase downstream: i=2822.0 (log10=3.4506) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2668.0 (log10=3.4262) is outside the data range [10^1.7717, 10^3.4144]."
+67411202,67411202,DEFAULT_BREAKER,38925240,K_20A,Breaker-Fuse,"Phase downstream: i=2641.0 (log10=3.4218) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2397.0 (log10=3.3797) is outside the data range [10^1.6881, 10^3.3354]."
+67411202,67411202,DEFAULT_BREAKER,38923727,K_25A,Breaker-Fuse,"Phase downstream: i=2908.0 (log10=3.4636) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2812.0 (log10=3.4490) is outside the data range [10^1.7717, 10^3.4144]."
+67421201,67421201,DEFAULT_BREAKER,38929873,K_25A,Breaker-Fuse,,"Ground downstream: i=3270.0 (log10=3.5145) is outside the data range [10^1.7717, 10^3.4144]."
+67421201,67421201,DEFAULT_BREAKER,38930025,K_25A,Breaker-Fuse,,"Ground downstream: i=3270.0 (log10=3.5145) is outside the data range [10^1.7717, 10^3.4144]."
+67421202,AL7_38926271,T_25A,2EDG42_785639293,K_20A,Fuse-Fuse,,"Ground upstream: i=2127.0 (log10=3.3278) is outside the data range [10^1.7089, 10^3.3155]."
+67421202,1Q4W37_38940933,SMU-20_(E)_175A,1W5F40_657987090,K_20A,Fuse-Fuse,,"Ground downstream: i=3524.0 (log10=3.5470) is outside the data range [10^1.6881, 10^3.3354]."
+67421202,38899339,K_25A,38899343,K_25A,Fuse-Fuse,"Phase upstream: i=2938.0 (log10=3.4681) is outside the data range [10^1.6981, 10^3.0549].; Phase downstream: i=2938.0 (log10=3.4681) is outside the data range [10^1.7717, 10^3.4144].","Ground upstream: i=2528.0 (log10=3.4028) is outside the data range [10^1.6981, 10^3.0549]."
+67421202,38899347,SMU-20_(E)_100A,38899339,K_25A,Fuse-Fuse,"Phase downstream: i=2947.0 (log10=3.4694) is outside the data range [10^1.7717, 10^3.4144].",
+67421202,38899339,K_25A,38936644,T_50A,Fuse-Fuse,,"Ground upstream: i=2410.0 (log10=3.3820) is outside the data range [10^1.6981, 10^3.0549]."
+67421202,38899339,K_25A,38926169,T_50A,Fuse-Fuse,,"Ground upstream: i=2400.0 (log10=3.3802) is outside the data range [10^1.6981, 10^3.0549]."
+67421202,A17C17_38929847,K_65A,38921063,K_25A,Fuse-Fuse,"Phase upstream: i=3082.0 (log10=3.4888) is outside the data range [10^2.0960, 10^3.4551].; Phase downstream: i=3082.0 (log10=3.4888) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2785.0 (log10=3.4448) is outside the data range [10^1.7717, 10^3.4144]."
+67421202,38899343,K_25A,38899361,SMU-20_(E)_65A,Fuse-Fuse,,"Ground upstream: i=2316.0 (log10=3.3647) is outside the data range [10^1.6981, 10^3.0549]."
+67421202,38899343,K_25A,38899363,SMU-20_(E)_65A,Fuse-Fuse,,"Ground upstream: i=2316.0 (log10=3.3647) is outside the data range [10^1.6981, 10^3.0549]."
+67421202,A17C17_38929847,K_65A,38917964,K_25A,Fuse-Fuse,,"Ground downstream: i=2732.0 (log10=3.4365) is outside the data range [10^1.7717, 10^3.4144]."
+67421202,AL7_38926271,T_25A,2EDG44_785639296,K_20A,Fuse-Fuse,,"Ground upstream: i=2123.0 (log10=3.3269) is outside the data range [10^1.7089, 10^3.3155]."
+67421202,2EDG44_785639296,K_20A,1G4M19_659017365,K_20A,Fuse-Fuse,,"Ground upstream: i=2049.0 (log10=3.3115) is outside the data range [10^1.5919, 10^2.9356]."
+67421203,757384311,K_25A,7FH5_38936421,T_50A,Fuse-Fuse,,"Ground upstream: i=1199.0 (log10=3.0788) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEJ92_38932863,K_25A,Fuse-Fuse,,"Ground upstream: i=1620.0 (log10=3.2095) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEK11_38929919,K_25A,Fuse-Fuse,,"Ground upstream: i=1268.0 (log10=3.1031) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEK23_38915664,T_65A,Fuse-Fuse,,"Ground upstream: i=1188.0 (log10=3.0748) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2C5P55_38952006,T_65A,Fuse-Fuse,,"Ground upstream: i=1244.0 (log10=3.0948) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEJ85_38930951,K_25A,Fuse-Fuse,,"Ground upstream: i=1722.0 (log10=3.2360) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BAP32_38932097,T_40A,38925938,K_25A,Fuse-Fuse,,"Ground downstream: i=2873.0 (log10=3.4583) is outside the data range [10^1.7717, 10^3.4144]."
+67421204,2BEJ82_38929488,K_25A,2BEJ95_38926964,T_65A,Fuse-Fuse,,"Ground upstream: i=1543.0 (log10=3.1884) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEJ96_38934035,T_65A,Fuse-Fuse,,"Ground upstream: i=1510.0 (log10=3.1790) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEK10_38931309,T_65A,Fuse-Fuse,,"Ground upstream: i=1288.0 (log10=3.1099) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2PWF30_830390906,K_20A,Fuse-Fuse,,"Ground upstream: i=1716.0 (log10=3.2345) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEK23_38920126,T_65A,Fuse-Fuse,,"Ground upstream: i=1188.0 (log10=3.0748) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BGW21_38952008,T_65A,Fuse-Fuse,,"Ground upstream: i=1245.0 (log10=3.0952) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2B2M64_367189272,T_65A,259H90_713027296,UNK_UNKA,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67421204,2BEJ82_38929488,K_25A,2BEJ84_38921643,T_65A,Fuse-Fuse,,"Ground upstream: i=1750.0 (log10=3.2430) is outside the data range [10^1.6981, 10^3.0549]."
+67421204,2BEJ82_38929488,K_25A,2BEJ87_38916497,K_25A,Fuse-Fuse,,"Ground upstream: i=1675.0 (log10=3.2240) is outside the data range [10^1.6981, 10^3.0549]."
+67431201,2PYA54_859573268,VPST_800A,38932242,T_65A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38924969,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5JK12_38919942,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38942576,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5JK7_38929380,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5J2.5_38925620,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,67431201,DEFAULT_BREAKER,20PP54_763563426,K_25A,Breaker-Fuse,"Phase downstream: i=3130.0 (log10=3.4955) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2865.0 (log10=3.4571) is outside the data range [10^1.7717, 10^3.4144]."
+67431201,2PYA54_859573268,VPST_800A,38932099,K_25A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38927268,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38933161,K_25A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38929736,K_25A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38944677,K_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5JK12_38928861,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,20PP57_763563473,K_80A,1YYK59_696766002,K_20A,Fuse-Fuse,,"Ground downstream: i=2580.0 (log10=3.4116) is outside the data range [10^1.6881, 10^3.3354]."
+67431201,2PYA54_859573268,VPST_800A,84356241,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5JN14-1_39086074,T_65A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,2LDT75_38927794,T_65A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38925364,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,2LDT75_38933019,T_65A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38924117,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5J3_38919090,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38925732,K_30A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38933586,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5J5_38935910,T_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38917762,K_25A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,5JK12-1_39086114,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38925842,K_50A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38930713,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,38931515,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,2PYA54_859573268,VPST_800A,2BBF62_38920199,T_40A,Recloser-Fuse,,Ground upstream: FID 859573268 not in RecloserDatabase
+67431201,4J2_39010607,L_200A,2PYA54_859573268,VPST_800A,Recloser-Recloser,Phase downstream: FID 859573268 not in RecloserDatabase,Ground downstream: FID 859573268 not in RecloserDatabase
+67431202,275Y36_737250174,K_65A,173329741,K_20A,Fuse-Fuse,"Phase upstream: i=3612.0 (log10=3.5577) is outside the data range [10^2.0960, 10^3.4551].; Phase downstream: i=3612.0 (log10=3.5577) is outside the data range [10^1.6881, 10^3.3354].","Ground upstream: i=3522.0 (log10=3.5468) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: i=3522.0 (log10=3.5468) is outside the data range [10^1.6881, 10^3.3354]."
+67431202,275Y36_737250174,K_65A,652555291,UNK_UNKA,Fuse-Fuse,"Phase upstream: i=3243.0 (log10=3.5109) is outside the data range [10^2.0960, 10^3.4551].; Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA'","Ground upstream: i=2940.0 (log10=3.4683) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'"
+67431202,275Y36_737250174,K_65A,38934147,K_80A,Fuse-Fuse,,"Ground upstream: i=3627.0 (log10=3.5595) is outside the data range [10^2.0960, 10^3.4551]."
+67431202,275Y36_737250174,K_65A,38916787,T_80A,Fuse-Fuse,"Phase upstream: i=3479.0 (log10=3.5415) is outside the data range [10^2.0960, 10^3.4551].","Ground upstream: i=3301.0 (log10=3.5186) is outside the data range [10^2.0960, 10^3.4551]."
+67431202,51141892,K_80A,38931773,K_25A,Fuse-Fuse,"Phase downstream: i=2665.0 (log10=3.4257) is outside the data range [10^1.7717, 10^3.4144].",
+67431202,275Y36_737250174,K_65A,38929440,K_80A,Fuse-Fuse,,"Ground upstream: i=3324.0 (log10=3.5217) is outside the data range [10^2.0960, 10^3.4551]."
+67431202,275Y36_737250174,K_65A,38934343,T_80A,Fuse-Fuse,,"Ground upstream: i=3420.0 (log10=3.5340) is outside the data range [10^2.0960, 10^3.4551]."
+67431202,652555291,UNK_UNKA,22DY89_668465950,K_50A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67431202,275Y36_737250174,K_65A,38917966,K_80A,Fuse-Fuse,"Phase upstream: i=3576.0 (log10=3.5534) is outside the data range [10^2.0960, 10^3.4551].","Ground upstream: i=3460.0 (log10=3.5391) is outside the data range [10^2.0960, 10^3.4551]."
+67431202,38916787,T_80A,38926472,K_25A,Fuse-Fuse,"Phase downstream: i=3356.0 (log10=3.5258) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3115.0 (log10=3.4935) is outside the data range [10^1.7717, 10^3.4144]."
+67431202,38920316,K_65A,38917074,K_25A,Fuse-Fuse,"Phase downstream: i=2693.0 (log10=3.4302) is outside the data range [10^1.7717, 10^3.4144].",
+67431202,652555291,UNK_UNKA,2C11_38931199,K_25A,Fuse-Fuse,"Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: i=3192.0 (log10=3.5041) is outside the data range [10^1.7717, 10^3.4144].","Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: i=2874.0 (log10=3.4585) is outside the data range [10^1.7717, 10^3.4144]."
+67431203,67431203,DEFAULT_BREAKER,655509178,UNK_UNKA,Breaker-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67431203,655509178,UNK_UNKA,1MBB87_675627240,ES_125A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: Cannot determine fuse curve type for 'ES_125A',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: Cannot determine fuse curve type for 'ES_125A'
+67431203,655509178,UNK_UNKA,1J2E63_38920086,K_25A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67431203,655509178,UNK_UNKA,1MBB87_675627280,ES_125A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: Cannot determine fuse curve type for 'ES_125A',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: Cannot determine fuse curve type for 'ES_125A'
+67431203,655509178,UNK_UNKA,564682647,ES_125A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: Cannot determine fuse curve type for 'ES_125A',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: Cannot determine fuse curve type for 'ES_125A'
+67431203,655509178,UNK_UNKA,1MBB86_574391299,ES_125A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: Cannot determine fuse curve type for 'ES_125A',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: Cannot determine fuse curve type for 'ES_125A'
+67431205,A21-2 B_673952369,TRIPSAVER_II_200A,2B5T14_38915458,K_25A,TripSaver-Fuse,"Phase downstream: i=2938.0 (log10=3.4681) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2736.0 (log10=3.4371) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,38931093,K_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67431205,A9_673952378,TRIPSAVER_II_200A,2A1_38928909,K_25A,TripSaver-Fuse,"Phase downstream: i=3402.0 (log10=3.5317) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3505.0 (log10=3.5447) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,357665031,K_25A,Breaker-Fuse,,"Ground upstream: Relay setting error ('CTR'); Ground downstream: i=3124.0 (log10=3.4947) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,38929294,K_50A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67431205,25FJ31_752300287,VPST_800A,38919387,K_25A,Recloser-Fuse,"Phase downstream: i=2967.0 (log10=3.4723) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2765.0 (log10=3.4417) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,1YWT66_668743372,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67431205,25FJ31_752300287,VPST_800A,38921325,K_25A,Recloser-Fuse,"Phase downstream: i=2877.0 (log10=3.4589) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2624.0 (log10=3.4190) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,38931301,K_25A,Breaker-Fuse,"Phase upstream: Relay setting error ('CTR'); Phase downstream: i=3262.0 (log10=3.5135) is outside the data range [10^1.7717, 10^3.4144].","Ground upstream: Relay setting error ('CTR'); Ground downstream: i=3254.0 (log10=3.5124) is outside the data range [10^1.7717, 10^3.4144]."
+67431205,67431205,DEFAULT_BREAKER,357665053,K_80A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,38923174,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,38916072,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,25FJ31_752300287,VPST_800A,Breaker-Recloser,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,A21-2 B_673952369,TRIPSAVER_II_200A,Breaker-TripSaver,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,A9_673952378,TRIPSAVER_II_200A,Breaker-TripSaver,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67431205,67431205,DEFAULT_BREAKER,25RH50_753399698,VPST_800A,Breaker-Recloser,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67441202,67441202,DEFAULT_BREAKER,38924491,K_25A,Breaker-Fuse,"Phase downstream: i=3446.0 (log10=3.5373) is outside the data range [10^1.7717, 10^3.4144].",
+67441202,67441202,DEFAULT_BREAKER,38919848,K_25A,Breaker-Fuse,"Phase downstream: i=3934.0 (log10=3.5948) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2893.0 (log10=3.4613) is outside the data range [10^1.7717, 10^3.4144]."
+67441202,828153927,K_80A,752240390,UNK_UNKA,Fuse-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441202,38931827,T_80A,38941214,K_20A,Fuse-Fuse,"Phase downstream: i=3549.0 (log10=3.5501) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=2580.0 (log10=3.4116) is outside the data range [10^1.6881, 10^3.3354]."
+67441202,67441202,DEFAULT_BREAKER,38917499,K_30A,Breaker-Fuse,"Phase downstream: i=4403.0 (log10=3.6437) is outside the data range [10^1.8914, 10^3.5273].",
+67441202,1KFR90_651825550,L_200A,752240437,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441202,752240390,UNK_UNKA,366668975,K_65A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,0006_471163449,L_200A,1YYN78_752450948,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38932705,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,67441203,DEFAULT_BREAKER,38924230,K_30A,Breaker-Fuse,"Phase downstream: i=4253.0 (log10=3.6287) is outside the data range [10^1.8914, 10^3.5273].",
+67441203,4F1_39010874,L_200A,752450900,UNK_UNKA,Recloser-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,0006_471163449,L_200A,752450940,UNK_UNKA,Recloser-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38934505,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38931073,K_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,67441203,DEFAULT_BREAKER,38916272,K_30A,Breaker-Fuse,"Phase downstream: i=4405.0 (log10=3.6439) is outside the data range [10^1.8914, 10^3.5273].",
+67441203,39082701,UNK_UNKA,38936040,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38920638,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38924756,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,9F17_39010906,L_100A,752450889,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38925977,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,38918300,T_80A,38916214,K_25A,Fuse-Fuse,"Phase downstream: i=3782.0 (log10=3.5777) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2766.0 (log10=3.4419) is outside the data range [10^1.7717, 10^3.4144]."
+67441203,39082701,UNK_UNKA,38931029,K_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,39082701,UNK_UNKA,38926049,T_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,0006_471163449,L_200A,39082701,UNK_UNKA,Recloser-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441203,38917243,K_65A,38930969,K_20A,Fuse-Fuse,,"Ground downstream: i=2359.0 (log10=3.3727) is outside the data range [10^1.6881, 10^3.3354]."
+67441204,752119876,UNK_UNKA,142915743,K_25A,Fuse-Fuse,"Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Phase downstream: i=3763.0 (log10=3.5755) is outside the data range [10^1.7717, 10^3.4144].","Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'; Ground downstream: i=2684.0 (log10=3.4288) is outside the data range [10^1.7717, 10^3.4144]."
+67441204,67441204,DEFAULT_BREAKER,752119876,UNK_UNKA,Breaker-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67441204,67441204,DEFAULT_BREAKER,1H1J86_545977879,K_25A,Breaker-Fuse,,"Ground downstream: i=3361.0 (log10=3.5265) is outside the data range [10^1.7717, 10^3.4144]."
+67441204,67441204,DEFAULT_BREAKER,1H1K16_545977872,K_25A,Breaker-Fuse,,"Ground downstream: i=3332.0 (log10=3.5227) is outside the data range [10^1.7717, 10^3.4144]."
+67441204,67441204,DEFAULT_BREAKER,462721480,K_25A,Breaker-Fuse,"Phase downstream: i=2985.0 (log10=3.4749) is outside the data range [10^1.7717, 10^3.4144].",
+67451202,2CHK03_38921024,T_65A,38927749,K_20A,Fuse-Fuse,,"Ground downstream: i=2197.0 (log10=3.3418) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,813962118,UNK_UNKA,38916455,K_80A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67451202,67451202,DEFAULT_BREAKER,NC2_38925039,K_25A,Breaker-Fuse,,"Ground downstream: i=4214.0 (log10=3.6247) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,38916431,T_80A,38916589,K_20A,Fuse-Fuse,,"Ground downstream: i=3279.0 (log10=3.5157) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,67451202,DEFAULT_BREAKER,813962118,UNK_UNKA,Breaker-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67451202,1E4X15_813962124,T_80A,38925029,K_25A,Fuse-Fuse,,"Ground downstream: i=3239.0 (log10=3.5104) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,38916451,K_40A,164078096,K_25A,Fuse-Fuse,,"Ground upstream: i=2896.0 (log10=3.4618) is outside the data range [10^1.9000, 10^3.2505].; Ground downstream: i=2896.0 (log10=3.4618) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,38925580,K_100A,370263856,K_25A,Fuse-Fuse,,"Ground upstream: i=5091.0 (log10=3.7068) is outside the data range [10^2.3028, 10^3.6868].; Ground downstream: i=5091.0 (log10=3.7068) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,67451202,DEFAULT_BREAKER,N15_813962128,UNK_UNKA,Breaker-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67451202,38916565,K_40A,1X9G24_652907596,K_20A,Fuse-Fuse,,"Ground upstream: i=2791.0 (log10=3.4458) is outside the data range [10^1.9000, 10^3.2505].; Ground downstream: i=2791.0 (log10=3.4458) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,1E4X16_38919385,K_65A,2DQR52_38919395,K_20A,Fuse-Fuse,,"Ground upstream: i=3545.0 (log10=3.5496) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: i=3545.0 (log10=3.5496) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,N27_38925971,K_80A,NF1_38922828,K_20A,Fuse-Fuse,,"Ground downstream: i=2503.0 (log10=3.3985) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,67451202,DEFAULT_BREAKER,NC2_780693165,K_25A,Breaker-Fuse,,"Ground downstream: i=4214.0 (log10=3.6247) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,67451202,DEFAULT_BREAKER,390796977,K_25A,Breaker-Fuse,"Phase downstream: i=3844.0 (log10=3.5848) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3471.0 (log10=3.5405) is outside the data range [10^1.7717, 10^3.4144]."
+67451202,38925612,K_100A,1R0B90_836235095,K_20A,Fuse-Fuse,,"Ground downstream: i=2877.0 (log10=3.4589) is outside the data range [10^1.6881, 10^3.3354]."
+67451202,N37_38925502,K_80A,2BQL65_38926157,K_25A,Fuse-Fuse,"Phase downstream: i=2689.0 (log10=3.4296) is outside the data range [10^1.7717, 10^3.4144].",
+67451203,1DKM38_38935314,K_80A,JB1_38931005,K_20A,Fuse-Fuse,,"Ground downstream: i=2726.0 (log10=3.4355) is outside the data range [10^1.6881, 10^3.3354]."
+67461201,3K3_671345867,TRIPSAVER_II_100A,38919816,K_25A,TripSaver-Fuse,,"Ground downstream: i=2781.0 (log10=3.4442) is outside the data range [10^1.7717, 10^3.4144]."
+67461201,L2P34_570003255,VPST_800A,38942245,K_25A,Recloser-Fuse,,"Ground downstream: i=3173.0 (log10=3.5015) is outside the data range [10^1.7717, 10^3.4144]."
+67461201,L2P34_570003255,VPST_800A,3K3_38922860,K_25A,Recloser-Fuse,,"Ground downstream: i=3279.0 (log10=3.5157) is outside the data range [10^1.7717, 10^3.4144]."
+67461201,38919948,T_80A,38932522,K_25A,Fuse-Fuse,,"Ground downstream: i=2827.0 (log10=3.4513) is outside the data range [10^1.7717, 10^3.4144]."
+67461201,21XJ41_677202842,VPST_800A,767153297,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67461202,84643905,T_80A,38933001,K_25A,Fuse-Fuse,,"Ground downstream: i=2905.0 (log10=3.4631) is outside the data range [10^1.7717, 10^3.4144]."
+67461202,84643747,T_80A,38921783,K_25A,Fuse-Fuse,,"Ground downstream: i=4073.0 (log10=3.6099) is outside the data range [10^1.7717, 10^3.4144]."
+67461202,1D9X31_39011007,VPST_800A,84643922,K_25A,Recloser-Fuse,"Phase downstream: i=3882.0 (log10=3.5891) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3449.0 (log10=3.5377) is outside the data range [10^1.7717, 10^3.4144]."
+67461202,1R4Q43_565220226,VPST_800A,38920201,K_25A,Recloser-Fuse,,"Ground downstream: i=2961.0 (log10=3.4714) is outside the data range [10^1.7717, 10^3.4144]."
+67471201,38933834,K_65A,20EA64_673694312,K_20A,Fuse-Fuse,,"Ground upstream: i=4048.0 (log10=3.6072) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: i=4048.0 (log10=3.6072) is outside the data range [10^1.6881, 10^3.3354]."
+67471202,23YM68_781437809,UNK_UNKA,23YM71_849516416,K_65A,Fuse-Fuse,Phase upstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471202,67471202,DEFAULT_BREAKER,38944673,K_25A,Breaker-Fuse,,"Ground downstream: i=2986.0 (log10=3.4751) is outside the data range [10^1.7717, 10^3.4144]."
+67471202,67471202,DEFAULT_BREAKER,781437796,UNK_UNKA,Breaker-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471202,23YM70_849516398,T_65A,23YM68_781437809,UNK_UNKA,Fuse-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471202,DF1_38916519,T_40A,24XA91_38919872,K_25A,Fuse-Fuse,,"Ground downstream: i=3481.0 (log10=3.5417) is outside the data range [10^1.7717, 10^3.4144]."
+67471202,23YM68_781437809,UNK_UNKA,38919680,K_25A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471202,DF1_38916519,T_40A,38929188,K_25A,Fuse-Fuse,,"Ground downstream: i=3229.0 (log10=3.5091) is outside the data range [10^1.7717, 10^3.4144]."
+67471202,164469176,K_100A,138482142,K_25A,Fuse-Fuse,"Phase downstream: i=3641.0 (log10=3.5612) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3106.0 (log10=3.4922) is outside the data range [10^1.7717, 10^3.4144]."
+67471204,1TNG65_669533555,VPST_800A,38916684,K_25A,Recloser-Fuse,"Phase downstream: i=2813.0 (log10=3.4492) is outside the data range [10^1.7717, 10^3.4144].",
+67471204,1D0D01_39010379,VPSS_800A,38936329,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38928012,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,34P4_38934656,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38934055,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,39082802,UNK_UNKA,38923860,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,15P23_676511172,UNK_UNKA,38930067,T_80A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,38921279,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,7P23_39010836,VPSS_800A,15P23_676511172,UNK_UNKA,Recloser-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,450432018,K_20A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38922608,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1T8J58_653521963,TRIPSAVER_II_200A,39082802,UNK_UNKA,TripSaver-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,164026682,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,164026636,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38922482,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,15P23_676511172,UNK_UNKA,38917292,T_80A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,164026771,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,1D9C09_540043566,K_20A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,2RGC87_164026525,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38930304,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,164026673,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38928278,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38919080,T_65A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,1P9X29_654470343,K_20A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,39082802,UNK_UNKA,38927701,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,2RGC87_164026534,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,38935036,T_80A,Recloser-Fuse,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,67471204,DEFAULT_BREAKER,38932468,K_25A,Breaker-Fuse,,"Ground downstream: i=3490.0 (log10=3.5428) is outside the data range [10^1.7717, 10^3.4144]."
+67471204,39082802,UNK_UNKA,38936259,T_40A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,15P23_676511172,UNK_UNKA,38916314,T_80A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67471204,1D0D01_39010379,VPSS_800A,1D0D13_466350253,4H_100A,Recloser-Recloser,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,67471204,DEFAULT_BREAKER,1D0D01_39010379,VPSS_800A,Breaker-Recloser,Phase downstream: FID 39010379 not in RecloserDatabase,Ground downstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,1D0D07_511351009,4H_100A,Recloser-Recloser,,Ground upstream: FID 39010379 not in RecloserDatabase
+67471204,1D0D01_39010379,VPSS_800A,1D0D02_511016061,L_140A,Recloser-Recloser,,Ground upstream: FID 39010379 not in RecloserDatabase
+67481203,2GHH62_804957590,K_25A,38924147,T_50A,Fuse-Fuse,,"Ground upstream: i=2411.0 (log10=3.3822) is outside the data range [10^1.6981, 10^3.0549]."
+67481203,G7_670955645,TRIPSAVER_II_200A,2GHH62_804957590,K_25A,TripSaver-Fuse,,"Ground downstream: i=3408.0 (log10=3.5325) is outside the data range [10^1.7717, 10^3.4144]."
+67481203,1K1A02_39010403,L_200A,38931529,K_25A,Recloser-Fuse,,"Ground downstream: i=3196.0 (log10=3.5046) is outside the data range [10^1.7717, 10^3.4144]."
+67481203,38935976,T_80A,38927657,K_25A,Fuse-Fuse,,"Ground downstream: i=2844.0 (log10=3.4539) is outside the data range [10^1.7717, 10^3.4144]."
+67481203,1K1A02_39010403,L_200A,38932338,K_25A,Recloser-Fuse,,"Ground downstream: i=3156.0 (log10=3.4991) is outside the data range [10^1.7717, 10^3.4144]."
+67481203,2GHH62_804957590,K_25A,38936231,K_25A,Fuse-Fuse,,"Ground upstream: i=2313.0 (log10=3.3642) is outside the data range [10^1.6981, 10^3.0549]."
+67481203,67481203,DEFAULT_BREAKER,2P3W44_38940482,K_25A,Breaker-Fuse,,"Ground downstream: i=3422.0 (log10=3.5343) is outside the data range [10^1.7717, 10^3.4144]."
+67481203,38936211,K_80A,2CPE18_780778542,K_20A,Fuse-Fuse,,"Ground downstream: i=2392.0 (log10=3.3788) is outside the data range [10^1.6881, 10^3.3354]."
+67481203,2GHH62_804957590,K_25A,38936201,K_25A,Fuse-Fuse,,"Ground upstream: i=2035.0 (log10=3.3086) is outside the data range [10^1.6981, 10^3.0549]."
+67491201,2BKF15_38927745,T_50A,2M9L86_781421876,UNK_UNKA,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67491201,2J6W68_779762690,VPST_800A,2R9_38920078,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,4R9.8_38935764,K_50A,1E2F20_585817620,ES_30A,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'ES_30A'
+67491201,2J6W68_779762690,VPST_800A,3R4_38929152,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,38929358,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R28_38930889,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,3R3_38936301,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R17_38934944,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R28_38924923,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,4R9.8_38935764,K_50A,1E2F20_585817618,ES_30A,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'ES_30A'
+67491201,2J6W68_779762690,VPST_800A,2R5_38932556,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2JCK63_789616065,K_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R6_38928354,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R10_38920130,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2R28_38922410,T_80A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2JCK64_38919645,K_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,67491201,DEFAULT_BREAKER,2J6W68_779762690,VPST_800A,Breaker-Recloser,,"Ground downstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491201,2J6W68_779762690,VPST_800A,2FFQ68_39011044,CMR_100A,Recloser-Recloser,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67491202,1LKR13_567211724,VPST_800A,38925569,K_25A,Recloser-Fuse,,"Ground downstream: i=2619.0 (log10=3.4181) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,24YD72_39010450,VPST_800A,1F0D99_470081378,K_20A,Recloser-Fuse,,"Ground downstream: i=2604.0 (log10=3.4156) is outside the data range [10^1.6881, 10^3.3354]."
+67491202,1DXT18_456782933,K_25A,38931797,K_25A,Fuse-Fuse,,"Ground upstream: i=1449.0 (log10=3.1611) is outside the data range [10^1.6981, 10^3.0549]."
+67491202,24YD72_39010450,VPST_800A,2W3F66_38924651,K_25A,Recloser-Fuse,"Phase downstream: i=3132.0 (log10=3.4958) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3125.0 (log10=3.4949) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,67491202,DEFAULT_BREAKER,38927804,K_30A,Breaker-Fuse,"Phase downstream: i=3389.0 (log10=3.5301) is outside the data range [10^1.8914, 10^3.5273].","Ground downstream: i=3569.0 (log10=3.5525) is outside the data range [10^1.8914, 10^3.5273]."
+67491202,1LKR13_567211724,VPST_800A,38923411,K_25A,Recloser-Fuse,,"Ground downstream: i=2619.0 (log10=3.4181) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,1HHP16_668369873,VPST_800A,29JB42_782171662,K_25A,Recloser-Fuse,,"Ground downstream: i=2923.0 (log10=3.4658) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,1HHP16_668369873,VPST_800A,2T4_38928840,K_25A,Recloser-Fuse,,"Ground downstream: i=2927.0 (log10=3.4664) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,1DXT18_456782935,K_25A,38929310,K_25A,Fuse-Fuse,,"Ground upstream: i=1378.0 (log10=3.1392) is outside the data range [10^1.6981, 10^3.0549]."
+67491202,L1P6_38920334,T_80A,366524245,K_25A,Fuse-Fuse,,"Ground downstream: i=3148.0 (log10=3.4980) is outside the data range [10^1.7717, 10^3.4144]."
+67491202,38917000,T_80A,38928822,K_25A,Fuse-Fuse,"Phase downstream: i=2706.0 (log10=3.4323) is outside the data range [10^1.7717, 10^3.4144].",
+67513402,1MRP18_520059536,VPST_800A,745266731,UNK_UNKA,Recloser-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67513402,745266731,UNK_UNKA,38923233,K_65A,Fuse-Fuse,,Ground upstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67513403,243E42_753515422,VPST_800A,28MMD6_38933397,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD13_38920182,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38933221,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38934940,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38918776,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38929939,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,2ACY10_767140583,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38916037,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,20M21_38928539,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,2ACY10_38935516,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD5_38924911,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,27YM08_755546648,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD23-1_758990453,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,27YM09_38932216,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38933519,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD25_38933888,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38923329,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,30M9_38932262,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38917976,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD18_38929518,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD10_38930617,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,20MS1_38922102,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD8_38922359,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,38920714,K_80A,38920861,K_25A,Fuse-Fuse,,"Ground downstream: i=2750.0 (log10=3.4393) is outside the data range [10^1.7717, 10^3.4144]."
+67513403,243E42_753515422,VPST_800A,38936796,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD5_38931789,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD16_38935292,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD26_38930366,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38932985,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38926485,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,1LKE12_567886861,VPST_800A,739118200,UNK_UNKA,Recloser-Fuse,Phase downstream: Cannot determine fuse curve type for 'UNK_UNKA',Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67513403,243E42_753515422,VPST_800A,28MMD8_38935044,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38933816,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38926601,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,1EEM98_38916427,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38920664,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38915809,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38935586,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38933413,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38917140,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38932949,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD22_38935050,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38932969,K_25A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38921381,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38918069,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38921028,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38921813,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38921775,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28M3_38930320,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,51382139,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,286A10_38935990,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,20M19_38919068,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38932923,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,22MC07_38919560,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD12_38936177,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38924539,T_40A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,28MMD3_38930853,T_30A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,38934810,T_65A,Recloser-Fuse,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,243E42_753515422,VPST_800A,30M10_39011066,VPSS_800A,Recloser-Recloser,,"Ground upstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67513403,15M18-1_39010923,VPST_800A,243E42_753515422,VPST_800A,Recloser-Recloser,,"Ground downstream: RecloserDB field error (float() argument must be a string or a real number, not 'NoneType')"
+67521206,2HPE67_788683719,K_20A,38930005,K_20A,Fuse-Fuse,,"Ground upstream: i=1490.0 (log10=3.1732) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38926992,T_65A,Fuse-Fuse,,"Ground upstream: i=2757.0 (log10=3.4404) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,38923675,T_65A,38945513,K_20A,Fuse-Fuse,,"Ground downstream: i=2380.0 (log10=3.3766) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,386794953,K_25A,1TFF90_656325663,K_20A,Fuse-Fuse,,"Ground upstream: i=1276.0 (log10=3.1059) is outside the data range [10^1.6981, 10^3.0549]."
+67521206,2HPE67_788683719,K_20A,38917514,K_20A,Fuse-Fuse,,"Ground upstream: i=2252.0 (log10=3.3526) is outside the data range [10^1.5919, 10^2.9356].; Ground downstream: i=2252.0 (log10=3.3526) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,2HPE67_788683719,K_20A,38923272,T_65A,Fuse-Fuse,,"Ground upstream: i=3958.0 (log10=3.5975) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,6GFJ1_38925816,K_20A,Fuse-Fuse,,"Ground upstream: i=2098.0 (log10=3.3218) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38915730,T_65A,Fuse-Fuse,,"Ground upstream: i=2364.0 (log10=3.3736) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,1TAM49_677671358,TRIPSAVER_II_100A,38928577,K_25A,TripSaver-Fuse,,"Ground downstream: i=3151.0 (log10=3.4984) is outside the data range [10^1.7717, 10^3.4144]."
+67521206,2HPE67_788683719,K_20A,410326075,K_20A,Fuse-Fuse,,"Ground upstream: i=2647.0 (log10=3.4228) is outside the data range [10^1.5919, 10^2.9356].; Ground downstream: i=2647.0 (log10=3.4228) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,2HPE67_788683719,K_20A,38946372,K_25A,Fuse-Fuse,,"Ground upstream: i=1544.0 (log10=3.1886) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,392909758,T_65A,6GFC1_38932546,K_20A,Fuse-Fuse,,"Ground downstream: i=3087.0 (log10=3.4895) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,2HPE67_788683719,K_20A,6GFJ1_38932853,K_20A,Fuse-Fuse,,"Ground upstream: i=2098.0 (log10=3.3218) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,38926992,T_65A,6GK4_38927112,K_20A,Fuse-Fuse,,"Ground downstream: i=2279.0 (log10=3.3577) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,1WXA91_668663175,VPST_800A,2HPE67_788683719,K_20A,Recloser-Fuse,"Phase downstream: i=4202.0 (log10=3.6235) is outside the data range [10^1.6881, 10^3.3354].","Ground downstream: i=4359.0 (log10=3.6394) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,38923272,T_65A,38935144,K_20A,Fuse-Fuse,,"Ground downstream: i=3639.0 (log10=3.5610) is outside the data range [10^1.6881, 10^3.3354]."
+67521206,2HPE67_788683719,K_20A,38931242,T_65A,Fuse-Fuse,,"Ground upstream: i=1796.0 (log10=3.2543) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,1TAM49_38930228,T_80A,12AV1_38918136,K_30A,Fuse-Fuse,,"Ground downstream: i=3543.0 (log10=3.5494) is outside the data range [10^1.8914, 10^3.5273]."
+67521206,2HPE67_788683719,K_20A,6G11_38930691,T_65A,Fuse-Fuse,,"Ground upstream: i=3801.0 (log10=3.5799) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38933467,K_20A,Fuse-Fuse,,"Ground upstream: i=1560.0 (log10=3.1931) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38918557,T_65A,Fuse-Fuse,,"Ground upstream: i=2372.0 (log10=3.3751) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,459221847,K_25A,Fuse-Fuse,,"Ground upstream: i=1426.0 (log10=3.1541) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,1TAM49_38930228,T_80A,12AV1_38932875,K_30A,Fuse-Fuse,,"Ground downstream: i=3543.0 (log10=3.5494) is outside the data range [10^1.8914, 10^3.5273]."
+67521206,1TAM49_677671358,TRIPSAVER_II_100A,38930444,K_25A,TripSaver-Fuse,,"Ground downstream: i=3151.0 (log10=3.4984) is outside the data range [10^1.7717, 10^3.4144]."
+67521206,2HPE67_788683719,K_20A,38924103,T_65A,Fuse-Fuse,,"Ground upstream: i=1683.0 (log10=3.2261) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38929470,T_65A,Fuse-Fuse,,"Ground upstream: i=3285.0 (log10=3.5165) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38918146,T_65A,Fuse-Fuse,,"Ground upstream: i=3416.0 (log10=3.5335) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,22NL69_49312817,K_80A,38923422,K_25A,Fuse-Fuse,"Phase downstream: i=2619.0 (log10=3.4181) is outside the data range [10^1.7717, 10^3.4144].",
+67521206,2HPE67_788683719,K_20A,22NC07_38931751,T_65A,Fuse-Fuse,,"Ground upstream: i=2960.0 (log10=3.4713) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38935846,T_65A,Fuse-Fuse,,"Ground upstream: i=1531.0 (log10=3.1850) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38934065,T_65A,Fuse-Fuse,,"Ground upstream: i=3162.0 (log10=3.5000) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,392909758,T_65A,Fuse-Fuse,,"Ground upstream: i=3167.0 (log10=3.5006) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38935474,K_20A,Fuse-Fuse,,"Ground upstream: i=1560.0 (log10=3.1931) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38931258,K_20A,Fuse-Fuse,,"Ground upstream: i=2056.0 (log10=3.3130) is outside the data range [10^1.5919, 10^2.9356]."
+67521206,2HPE67_788683719,K_20A,38923675,T_65A,Fuse-Fuse,,"Ground upstream: i=3507.0 (log10=3.5449) is outside the data range [10^1.5919, 10^2.9356]."
+67521207,38935900,T_80A,38933552,K_20A,Fuse-Fuse,,"Ground downstream: i=2582.0 (log10=3.4120) is outside the data range [10^1.6881, 10^3.3354]."
+67521207,1TCM66_670839382,TRIPSAVER_II_100A,38932971,K_20A,TripSaver-Fuse,,"Ground downstream: i=4511.0 (log10=3.6543) is outside the data range [10^1.6881, 10^3.3354]."
+67521207,1TCM66_670839382,TRIPSAVER_II_100A,2QRM96_860062641,K_20A,TripSaver-Fuse,,"Ground downstream: i=4229.0 (log10=3.6262) is outside the data range [10^1.6881, 10^3.3354]."
+67521207,38932306,K_65A,1WXP97_658808862,K_20A,Fuse-Fuse,,"Ground downstream: i=2202.0 (log10=3.3428) is outside the data range [10^1.6881, 10^3.3354]."
+67521208,1DNG50_674369710,TRIPSAVER_II_100A,38928471,K_20A,TripSaver-Fuse,,"Ground downstream: i=2629.0 (log10=3.4198) is outside the data range [10^1.6881, 10^3.3354]."
+67521208,38917867,T_80A,38916696,K_20A,Fuse-Fuse,,"Ground downstream: i=4125.0 (log10=3.6154) is outside the data range [10^1.6881, 10^3.3354]."
+67521208,38931145,K_65A,1JBX75_657849475,K_20A,Fuse-Fuse,,"Ground upstream: i=3036.0 (log10=3.4823) is outside the data range [10^2.0960, 10^3.4551].; Ground downstream: i=3036.0 (log10=3.4823) is outside the data range [10^1.6881, 10^3.3354]."
+67521208,67521208,DEFAULT_BREAKER,G22_657751544,UNK_UNKA,Breaker-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67521208,1DNG50_674369710,TRIPSAVER_II_100A,21GG09_673072933,K_20A,TripSaver-Fuse,,"Ground downstream: i=2245.0 (log10=3.3512) is outside the data range [10^1.6881, 10^3.3354]."
+67521208,1M2D32_393557989,VPST_800A,1LFR76_39009729,VPST_800A,Recloser-Recloser,Phase downstream: FID 39009729 not in RecloserDatabase,Ground downstream: FID 39009729 not in RecloserDatabase
+67531204,21L6_676257881,TRIPSAVER_II_100A,38926155,K_25A,TripSaver-Fuse,,"Ground downstream: i=3750.0 (log10=3.5740) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,21L6_676257881,TRIPSAVER_II_100A,38946120,K_25A,TripSaver-Fuse,,"Ground downstream: i=2979.0 (log10=3.4741) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,26L10_38927802,T_65A,2ELN65_828600335,UNK_UNKA,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67531204,25L2.5_676257897,TRIPSAVER_II_200A,38920650,K_25A,TripSaver-Fuse,"Phase downstream: i=3132.0 (log10=3.4958) is outside the data range [10^1.7717, 10^3.4144].",
+67531204,2JFJ18_782363149,T_80A,21LA1_38916224,K_25A,Fuse-Fuse,,"Ground downstream: i=4354.0 (log10=3.6389) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,1YXK98_391819081,K_65A,1FQJ05_470802826,K_25A,Fuse-Fuse,,"Ground downstream: i=2805.0 (log10=3.4479) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,1YXW85_676257915,TRIPSAVER_II_100A,107772991,K_25A,TripSaver-Fuse,"Phase downstream: i=3143.0 (log10=3.4973) is outside the data range [10^1.7717, 10^3.4144].",
+67531204,38946126,T_40A,1RGB95_657003637,K_20A,Fuse-Fuse,,"Ground downstream: i=2282.0 (log10=3.3583) is outside the data range [10^1.6881, 10^3.3354]."
+67531204,25L2.5_676257897,TRIPSAVER_II_200A,38940318,K_25A,TripSaver-Fuse,"Phase downstream: i=2927.0 (log10=3.4664) is outside the data range [10^1.7717, 10^3.4144].",
+67531204,1RBB91_407470600,T_80A,1RBB92_654431753,K_25A,Fuse-Fuse,,"Ground downstream: i=4803.0 (log10=3.6815) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,21L4_676257886,TRIPSAVER_II_200A,38923671,K_25A,TripSaver-Fuse,"Phase downstream: i=4212.0 (log10=3.6245) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3896.0 (log10=3.5906) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,38925720,T_50A,38915706,K_25A,Fuse-Fuse,,"Ground downstream: i=3333.0 (log10=3.5228) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,1YHH94_675356028,VPST_800A,38920630,K_30A,Recloser-Fuse,"Phase downstream: i=3531.0 (log10=3.5479) is outside the data range [10^1.8914, 10^3.5273].",
+67531204,67531204,DEFAULT_BREAKER,38922548,K_25A,Breaker-Fuse,"Phase downstream: i=3362.0 (log10=3.5266) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=2761.0 (log10=3.4411) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,67531204,DEFAULT_BREAKER,21L13_38927955,K_25A,Breaker-Fuse,,"Ground downstream: i=3286.0 (log10=3.5167) is outside the data range [10^1.7717, 10^3.4144]."
+67531204,25L2.5_676257897,TRIPSAVER_II_200A,38917190,K_25A,TripSaver-Fuse,"Phase downstream: i=2893.0 (log10=3.4613) is outside the data range [10^1.7717, 10^3.4144].",
+67531205,1TAN33_650808669,TRIPSAVER_II_200A,38935602,K_25A,TripSaver-Fuse,,"Ground downstream: i=3056.0 (log10=3.4852) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,1CWP61_38917602,T_80A,38925630,K_25A,Fuse-Fuse,"Phase downstream: i=4451.0 (log10=3.6485) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4261.0 (log10=3.6295) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,185608170,T_80A,1P5H63_652233464,K_20A,Fuse-Fuse,,"Ground downstream: i=2345.0 (log10=3.3701) is outside the data range [10^1.6881, 10^3.3354]."
+67531205,38925401,T_40A,2PPN59_836754628,UNK_UNKA,Fuse-Fuse,,Ground downstream: Cannot determine fuse curve type for 'UNK_UNKA'
+67531205,67531205,DEFAULT_BREAKER,38919894,K_25A,Breaker-Fuse,"Phase downstream: i=4680.0 (log10=3.6702) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4628.0 (log10=3.6654) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,1CWP60_169046422,K_140A,38923248,K_25A,Fuse-Fuse,"Phase downstream: i=4709.0 (log10=3.6729) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=4674.0 (log10=3.6697) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,84583356,T_40A,1TKL65_657841276,K_20A,Fuse-Fuse,,"Ground downstream: i=3290.0 (log10=3.5172) is outside the data range [10^1.6881, 10^3.3354]."
+67531205,84583356,T_40A,1CWP62_38931051,K_25A,Fuse-Fuse,,"Ground upstream: i=3639.0 (log10=3.5610) is outside the data range [10^1.9216, 10^3.5513].; Ground downstream: i=3639.0 (log10=3.5610) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,1CWP60_169046422,K_140A,38915991,K_25A,Fuse-Fuse,"Phase downstream: i=4901.0 (log10=3.6903) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=5010.0 (log10=3.6998) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,1TAN33_650808669,TRIPSAVER_II_200A,391402561,K_20A,TripSaver-Fuse,,"Ground downstream: i=3772.0 (log10=3.5766) is outside the data range [10^1.6881, 10^3.3354]."
+67531205,67531205,DEFAULT_BREAKER,2M3W45_367102696,K_25A,Breaker-Fuse,"Phase downstream: i=3787.0 (log10=3.5783) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3295.0 (log10=3.5179) is outside the data range [10^1.7717, 10^3.4144]."
+67531205,38933065,T_25A,JKE3_38931719,K_25A,Fuse-Fuse,,"Ground upstream: i=2610.0 (log10=3.4166) is outside the data range [10^1.7089, 10^3.3155].; Ground downstream: i=2610.0 (log10=3.4166) is outside the data range [10^1.7717, 10^3.4144]."
+67531206,67531206,DEFAULT_BREAKER,1HMK53_392412004,K_20A,Breaker-Fuse,,"Ground downstream: i=2337.0 (log10=3.3687) is outside the data range [10^1.6881, 10^3.3354]."
+67531206,67531206,DEFAULT_BREAKER,2ELN83_169046377,K_20A,Breaker-Fuse,,"Ground downstream: i=5740.0 (log10=3.7589) is outside the data range [10^1.6881, 10^3.3354]."
+67531206,67531206,DEFAULT_BREAKER,38918325,K_25A,Breaker-Fuse,"Phase downstream: i=3688.0 (log10=3.5668) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=3221.0 (log10=3.5080) is outside the data range [10^1.7717, 10^3.4144]."
+67531206,67531206,DEFAULT_BREAKER,169046431,K_25A,Breaker-Fuse,"Phase downstream: i=5254.0 (log10=3.7205) is outside the data range [10^1.7717, 10^3.4144].","Ground downstream: i=5690.0 (log10=3.7551) is outside the data range [10^1.7717, 10^3.4144]."
+67551202,67551202,DEFAULT_BREAKER,38936624,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551202,67551202,DEFAULT_BREAKER,38926537,K_25A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551202,67551202,DEFAULT_BREAKER,3N2_38918426,K_25A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551202,67551202,DEFAULT_BREAKER,3N2_38925086,K_25A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551202,67551202,DEFAULT_BREAKER,2N11-3_39010819,VPST_800A,Breaker-Recloser,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,38924109,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,38930821,K_25A,5HF7_38921667,K_25A,Fuse-Fuse,,"Ground upstream: i=1930.0 (log10=3.2856) is outside the data range [10^1.6981, 10^3.0549]."
+67551204,67551204,DEFAULT_BREAKER,20J7_38930073,K_100A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,2B4Q19_38928246,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,38920445,T_80A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,20J4_38935440,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,20J1_38931859,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,38920445,T_80A,38924467,K_20A,Fuse-Fuse,,"Ground downstream: i=2324.0 (log10=3.3662) is outside the data range [10^1.6881, 10^3.3354]."
+67551204,67551204,DEFAULT_BREAKER,38928120,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,38928056,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,38930821,K_25A,5HF7_38928816,K_25A,Fuse-Fuse,,"Ground upstream: i=1930.0 (log10=3.2856) is outside the data range [10^1.6981, 10^3.0549]."
+67551204,67551204,DEFAULT_BREAKER,20J8_38926029,K_100A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,407238736,K_65A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,38934984,K_25A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,H14_650684384,TRIPSAVER_II_200A,38932572,K_25A,TripSaver-Fuse,,"Ground downstream: i=3026.0 (log10=3.4809) is outside the data range [10^1.7717, 10^3.4144]."
+67551204,67551204,DEFAULT_BREAKER,38919976,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,7H3_38930805,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,38929808,K_25A,38920132,K_65A,Fuse-Fuse,,"Ground upstream: i=1362.0 (log10=3.1342) is outside the data range [10^1.6981, 10^3.0549]."
+67551204,67551204,DEFAULT_BREAKER,20J6_786344077,T_80A,Breaker-Fuse,Phase upstream: Relay setting error ('CTR'),Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,7HB_38931177,K_65A,Breaker-Fuse,,Ground upstream: Relay setting error ('CTR')
+67551204,407238736,K_65A,411515575,K_25A,Fuse-Fuse,"Phase downstream: i=2642.0 (log10=3.4219) is outside the data range [10^1.7717, 10^3.4144].",
+67551204,67551204,DEFAULT_BREAKER,7H2_650684373,TRIPSAVER_II_200A,Breaker-TripSaver,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,H14_650684384,TRIPSAVER_II_200A,Breaker-TripSaver,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,20J8_671161181,TRIPSAVER_II_200A,Breaker-TripSaver,,Ground upstream: Relay setting error ('CTR')
+67551204,67551204,DEFAULT_BREAKER,7H14_650684379,TRIPSAVER_II_100A,Breaker-TripSaver,,Ground upstream: Relay setting error ('CTR')
